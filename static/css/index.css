@@ -52,3 +52,13 @@ body{
   width: 5rem;
   height: 5rem;
 }
+
+
+/* fondos */
+
+.bg-img-yellow{
+  background-image: url("./../img/yellow-powder.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}

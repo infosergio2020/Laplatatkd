@@ -1,30 +1,32 @@
-<div id="quien" class="container-md">
-    <h1>¿Quiénes somos?</h1>
-    <h2>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</h2>
+<div class="bg-img-yellow">
+  <div id="quien" class="container-md">
+      <h1 class="text-center">¿Quiénes somos?</h1>
+      <h2 class="text-center">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</h2>
 
-    <div id="carouselExampleControls" class="carousel slide mb-5" data-bs-ride="carousel">
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img src="{{url_for('static', filename = './img/nosotros-1.webp')}}" class="d-carousel" alt="...">
+      <div id="carouselExampleControls" class="carousel slide mb-5" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="{{url_for('static', filename = './img/nosotros-1.webp')}}" class="d-carousel" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="{{url_for('static', filename = './img/nosotros-2.webp')}}" class="d-carousel" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="{{url_for('static', filename = './img/nosotros-5.jpg')}}" class="d-carousel" alt="...">
+          </div>
         </div>
-        <div class="carousel-item">
-          <img src="{{url_for('static', filename = './img/nosotros-2.webp')}}" class="d-carousel" alt="...">
-        </div>
-        <div class="carousel-item">
-          <img src="{{url_for('static', filename = './img/nosotros-5.jpg')}}" class="d-carousel" alt="...">
-        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
       </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
-    </div>
 
-    <p>
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laudantium explicabo exercitationem placeat quasi, facere pariatur nam accusantium omnis suscipit voluptatem, laborum fuga eligendi quos laboriosam cum eos ab. Doloremque, repellat.
-    </p>
+      <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laudantium explicabo exercitationem placeat quasi, facere pariatur nam accusantium omnis suscipit voluptatem, laborum fuga eligendi quos laboriosam cum eos ab. Doloremque, repellat.
+      </p>
+  </div>
 </div>
