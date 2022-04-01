@@ -1,8 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700;900&display=swap');
+
 html {
     scroll-behavior: smooth;
   }
+
+body{
+  font-family: 'Source Sans Pro', sans-serif;
+  padding-top: 140px;
+  background-color: #161827;
+  color: #ffffff;
+}
+
 .abs-center{
     display: flex;
     align-items: center;
     justify-content: center;    
+}
+
+
+.color-yellow1{
+  text-decoration: none;
+  color:#D8FF06;
+  padding: .5rem;
+  transition: all .3s ease-in-out;
+}
+
+.color-yellow1:hover ,.color-yellow1:focus-within{
+  background-color: #daff0603;
+  border: 1px solid #D8FF06;
+  color: #B5BB71;
+}
+
+.azul-marino-bg{
+  background-color: #161827;
+}
+
+.txt-blanco{
+  color: #ffffff;
+}
+
+.d-carousel{
+  width: 50%;
+}
+
+.carousel-item.active {
+  display: flex;
+  justify-content: center;
+}
+
+.carousel-control-next-icon, .carousel-control-prev-icon{
+  width: 5rem;
+  height: 5rem;
 }
