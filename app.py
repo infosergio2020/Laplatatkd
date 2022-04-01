@@ -2,7 +2,7 @@
 from importlib.resources import path
 from flask import Flask, make_response,send_from_directory
 from entorno import config
-from modules.rederizado import CustomRouter
+from modules.renderizado import CustomRouter
 
 # compresion de la app
 from flask_compress import Compress
