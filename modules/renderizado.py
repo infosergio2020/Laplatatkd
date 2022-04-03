@@ -1,5 +1,5 @@
 from flask import render_template,request
-from .mock_data import list_album,list_shocking, quienesSomos, membership, contacto, sedesHorarios
+from .mock_data import quienesSomos, membership, contacto, sedesHorarios
 
 class CustomRouter:
     # index
@@ -18,21 +18,4 @@ class CustomRouter:
 
     def render_sedesHorarios(self):
         return render_template('sedesHorarios.html')
-
-     #partials
-    def render_button(self):
-        return render_template('_button.html')
-    
-    def render_footer_notacion(self):
-        return render_template('_footer_notacion.html')
-
-    def render_head(self):
-        return render_template('_head.html')
-
-    def render_header(self):
-        return render_template('_header.html')
-
-    def render_layout(self):
-        return render_template('_layout.html')
-
    
