@@ -5,6 +5,7 @@ html {
   }
 
 body{
+  position: relative;
   font-family: 'Source Sans Pro', sans-serif;
   padding-top: 140px;
   background-color: #161827;
