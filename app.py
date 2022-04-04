@@ -30,3 +30,20 @@ def Index():
     return rutas.render_index()
 ###########################
 ###########################
+# Aqui se detallan las 4 paginas de la barra de navegacion
+@app.route('/contacto')
+def Contacto():
+    return rutas.render_contacto()
+###########################
+@app.route('/membership')
+def Membership():
+    return rutas.render_membership()
+###########################
+@app.route('/quienesSomos')
+def QuienesSomos():
+    return rutas.render_quienesSomos()
+###########################
+@app.route('/sedesHorarios')
+def SedesHorarios():
+    return rutas.render_sedesHorarios()
+###########################

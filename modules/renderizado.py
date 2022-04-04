@@ -6,7 +6,7 @@ class CustomRouter:
     def render_index(self):
         return render_template('index.html')
     
-    ## esto no hiria no? porque estarian todos en la misma ruta del index
+    #Aqui se detallan las 4 paginas de la barra de navegacion
     def render_membership(self):
         return render_template('membership.html')
 
