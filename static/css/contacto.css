@@ -1,0 +1,21 @@
+section#contact {
+    background-color: #212529;
+    background-image: url(../img/flyer-3.webp);
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+@media (min-width:768px) {
+    section#contact {
+        background-color: #212529;
+        background-image: url(../img/flyer-3.webp);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+}
+
+.page-section {
+    padding: 6rem 0;
+}
