@@ -28,8 +28,9 @@ mail_settings = {
     "MAIL_PORT": 465,
     "MAIL_USE_TLS": False,
     "MAIL_USE_SSL": True,
-    "MAIL_USERNAME":'oriailigo1.gmail.com',
-    "MAIL_PASSWORD": os.environ.get('PASSWORD')
+    "MAIL_USERNAME": "infosergio2021@gmail.com",
+    "MAIL_PASSWORD": "danialone_22"
+    # "MAIL_PASSWORD": os.environ.get('PASSWORD')
 }
 
 app.config.update(mail_settings)
@@ -53,10 +54,10 @@ def Index():
 @app.route('/contacto', methods=['GET','POST'])
 def Contacto():
     if request.method == 'POST':
-        msg=Message("Hey", sender='noreply@demo.com', recipients='oriailigo1@gmail.com')
+        msg=Message("Hey", sender="noreply@demo.com", recipients=['ser.unlp93@gmail.com'])
         msg.body="Hey how are you? Is everything okay?"
         mail.send(msg)
-        return "Sent email."
+        
     return rutas.render_contacto()
 ###########################
 @app.route('/membership')
