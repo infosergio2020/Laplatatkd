@@ -1,4 +1,4 @@
-section#contact {
+/* section#contact {
     background-color: #212529;
     background-image: url(../img/flyer-3.webp);
     background-position: center bottom;
@@ -14,8 +14,8 @@ section#contact {
         background-position: center;
         background-size: cover;
     }
-}
+} */
 
 .page-section {
-    padding: 6rem 0;
+    padding: .8rem 0;
 }

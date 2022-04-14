@@ -38,3 +38,24 @@ sedesHorarios={
             "hora":'https://www.youtube.com/watch?v=Xz1asENSdr4',
     },
 }
+
+botones_navbar = [
+    {
+        "title":"Quiénes somos",
+        "url":"/quienesSomos"
+    },
+    {
+        "title":"Sedes y horarios",
+        "url":"/sedesHorarios"
+    },
+    {
+        "title":"Membresía",
+        "url":"/membership"
+    },
+    {
+        "title":"Contacto",
+        "url":"/contacto"
+    },
+
+]
+
