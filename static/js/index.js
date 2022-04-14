@@ -12,3 +12,8 @@ window.addEventListener("scroll",()=>{
 
     lastScrollY = window.scrollY;
 });
+
+document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.parallax');
+    var instances = M.Parallax.init(elems, options);
+});
