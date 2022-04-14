@@ -14,6 +14,7 @@ class CustomRouter:
         return render_template('quienesSomos.html', links = botones_navbar)
 
     def render_contacto(self):
+        
         return render_template('contacto.html', links = botones_navbar)
 
     def render_sedesHorarios(self):

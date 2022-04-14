@@ -1,6 +1,7 @@
 # comienzo
+from email import message
 from importlib.resources import path
-from flask import Flask, make_response, request,send_from_directory
+from flask import Flask, make_response, render_template, request,send_from_directory
 from flask_mail import Mail, Message
 import os
 from entorno import config
@@ -29,7 +30,7 @@ mail_settings = {
     "MAIL_USE_TLS": False,
     "MAIL_USE_SSL": True,
     "MAIL_USERNAME":'oriailigo1.gmail.com',
-    "MAIL_PASSWORD": os.environ.get('PASSWORD')
+    "MAIL_PASSWORD":'Onepiecetoby1@!!'
 }
 
 app.config.update(mail_settings)
@@ -53,10 +54,10 @@ def Index():
 @app.route('/contacto', methods=['GET','POST'])
 def Contacto():
     if request.method == 'POST':
-        msg=Message("Hey", sender='noreply@demo.com', recipients='oriailigo1@gmail.com')
+        msg=Message("Hey", sender='noreply@demo.com', recipients=['oriailigo1@gmail.com'])
         msg.body="Hey how are you? Is everything okay?"
         mail.send(msg)
-        return "Sent email."
+
     return rutas.render_contacto()
 ###########################
 @app.route('/membership')
