@@ -13,7 +13,15 @@ window.addEventListener("scroll",()=>{
     lastScrollY = window.scrollY;
 });
 
-document.addEventListener('DOMContentLoaded', function() {
-    var elems = document.querySelectorAll('.parallax');
-    var instances = M.Parallax.init(elems, options);
+
+var image = document.getElementById("paralax")
+new simpleParallax(image, {
+	orientation: 'up',
+    scale:'1.25'
 });
+
+
+// document.addEventListener('DOMContentLoaded', function() {
+//     var elems = document.querySelectorAll('.parallax');
+//     var instances = M.Parallax.init(elems, options);
+// });

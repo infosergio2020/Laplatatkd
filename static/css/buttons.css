@@ -36,8 +36,12 @@
   }   
 }
 
-
 .btn-link-sl:hover, .btn-link-sl:focus-within {
   background-color: var(--secondary);
   color: var(--text-on-s);
+}
+
+
+.btn-block{
+  width: 100%;
 }
