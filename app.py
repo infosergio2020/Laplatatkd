@@ -22,7 +22,7 @@ rutas = CustomRouter()
 app = Flask(__name__)
 
 ##
-## Comienzo del gmail
+## Comienzo del gmail de sergio
 ##
 mail_settings = {
     "MAIL_SERVER": 'smtp.gmail.com',
