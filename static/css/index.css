@@ -1,6 +1,53 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700;900&display=swap');
 
+:root {
+  /* black variations */
+  --primary: #212121;
+  --primary-light: #484848;
+  --primary-dark: #000000;
+  /* yellow variations */
+  --secondary:#ffeb3b;
+  --secondary-light:#ffff72;
+  --secondary-dark:#c8b900;
+  /*optional */
+  --optional-white:#F5F5F6;
+  /* text on parraph */
+  --text-on-p:#fafafa;/*combinar con primary*/
+  --text-on-s:#212121;/*combinar con secondary*/
+}
 
+/* utils */
+.bg-p{
+  background-color: var(--primary);
+}
+
+.bg-p-dark{
+  background-color: var(--primary-dark)!important;
+}
+
+.bg-p-light{
+  background-color: var(--primary-light)!important;
+}
+
+.bg-s{
+  background-color: var(--secondary);
+}
+
+.bg-s-dark{
+  background-color: var(--secondary-dark)!important;
+}
+
+.bg-s-light{
+  background-color: var(--secondary-light)!important;
+}
+
+.bg-op-white{
+  background-color: var(--optional-white);
+}
+
+
+
+/* utils end */
 
 html {
     scroll-behavior: smooth;
@@ -10,28 +57,14 @@ body{
   position: relative;
   font-family: 'Source Sans Pro', sans-serif;
   padding-top: 140px;
-  background-color: #161827;
-  color: #ffffff;
+  background-color: var(--primary);
+  color: var(--text-on-p);
 }
 
 .abs-center{
     display: flex;
     align-items: center;
     justify-content: center;    
-}
-
-
-.color-yellow1{
-  text-decoration: none;
-  color:#D8FF06;
-  padding: .5rem;
-  transition: all .3s ease-in-out;
-}
-
-.color-yellow1:hover ,.color-yellow1:focus-within{
-  background-color: #daff0603;
-  border: 1px solid #D8FF06;
-  color: #B5BB71;
 }
 
 .azul-marino-bg{
@@ -65,3 +98,19 @@ body{
   background-size: cover;
   background-position: center center;
 }
+
+.nav-transition-1{
+  transition: all .2s ease-in-out;
+}
+
+.nav--hidden{
+  transform: translateY(calc(-1 * 328px));
+}
+
+
+@media (min-width: 768px){
+  .nav--hidden{
+    transform: translateY(calc(-1 * 130px));
+  }    
+}
+
