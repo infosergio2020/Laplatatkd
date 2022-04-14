@@ -1,6 +1,8 @@
 # comienzo
 from importlib.resources import path
-from flask import Flask, make_response,send_from_directory
+from flask import Flask, make_response, request,send_from_directory
+from flask_mail import Mail, Message
+import os
 from entorno import config
 from modules.renderizado import CustomRouter
 
@@ -17,6 +19,23 @@ rutas = CustomRouter()
 
 ##Configuracion del app
 app = Flask(__name__)
+
+##
+## Comienzo del gmail
+##
+mail_settings = {
+    "MAIL_SERVER": 'smtp.gmail.com',
+    "MAIL_PORT": 465,
+    "MAIL_USE_TLS": False,
+    "MAIL_USE_SSL": True,
+    "MAIL_USERNAME":'oriailigo1.gmail.com',
+    "MAIL_PASSWORD": os.environ.get('PASSWORD')
+}
+
+app.config.update(mail_settings)
+mail = Mail(app)
+## fin del gmail
+
 app.config.from_object(config)
 
 CORS(app)
@@ -31,8 +50,13 @@ def Index():
 ###########################
 ###########################
 # Aqui se detallan las 4 paginas de la barra de navegacion
-@app.route('/contacto')
+@app.route('/contacto', methods=['GET','POST'])
 def Contacto():
+    if request.method == 'POST':
+        msg=Message("Hey", sender='noreply@demo.com', recipients='oriailigo1@gmail.com')
+        msg.body="Hey how are you? Is everything okay?"
+        mail.send(msg)
+        return "Sent email."
     return rutas.render_contacto()
 ###########################
 @app.route('/membership')
