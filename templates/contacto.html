@@ -9,10 +9,10 @@
         <h1>¿Quiere saber más? Contactanos!</h1>
         <h3>Escribinos y encontrá tu lugar de practica mas cercano!</h3>
 
-        <form method="POST">
+        <form action="https://formsubmit.co/oriailigo1@gmail.com" method="POST">
             <div class="form-group">
               <label for="exampleFormControlInput1">Direccion de correo</label>
-              <input type="email" name="Email" class="form-control" required id="exampleFormControlInput1" placeholder="name@example.com">
+              <input type="email" name="email" class="form-control" required id="exampleFormControlInput1" placeholder="name@example.com">
             </div>
             <div class="form-group">
               <label for="exampleFormControlSelect1">Asunto</label>
@@ -27,8 +27,10 @@
             </div>
             <div class="form-group">
               <label for="exampleFormControlTextarea1">Mensaje</label>
-              <textarea name="mensaje" placeholder="Escribe tu mensaje aquí." required class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+              <textarea name="message" placeholder="Escribe tu mensaje aquí." required class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
             </div>
+            <input type="hidden" name="_subject" value="¡Nuevo email wooo!">
+            <input type="hidden" name="_next" value="http://127.0.0.1:5000/gracias.html">
             <div class="d-flex my-2">
                 <button type="submit" class="btn btn-link-sl btn-lg btn-block">Enviar</button>
             </div>

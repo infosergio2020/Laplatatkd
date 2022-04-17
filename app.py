@@ -24,17 +24,17 @@ app = Flask(__name__)
 ##
 ## Comienzo del gmail de sergio
 ##
-mail_settings = {
-    "MAIL_SERVER": 'smtp.gmail.com',
-    "MAIL_PORT": 465,
-    "MAIL_USE_TLS": False,
-    "MAIL_USE_SSL": True,
-    "MAIL_USERNAME":'oriailigo1.gmail.com',
-    "MAIL_PASSWORD":'Onepiecetoby1@!!'
-}
+# mail_settings = {
+#     "MAIL_SERVER": 'smtp.gmail.com',
+#     "MAIL_PORT": 465,
+#     "MAIL_USE_TLS": False,
+#     "MAIL_USE_SSL": True,
+#     "MAIL_USERNAME": "oriailigo1@gmail.com",
+#     "MAIL_PASSWORD": "Onepiecetoby1@!!"
+# }
 
-app.config.update(mail_settings)
-mail = Mail(app)
+# app.config.update(mail_settings)
+# mail = Mail(app)
 ## fin del gmail
 
 app.config.from_object(config)
@@ -51,12 +51,15 @@ def Index():
 ###########################
 ###########################
 # Aqui se detallan las 4 paginas de la barra de navegacion
-@app.route('/contacto', methods=['GET','POST'])
+@app.route('/contacto')
 def Contacto():
-    if request.method == 'POST':
-        msg=Message("Hey", sender='noreply@demo.com', recipients=['oriailigo1@gmail.com'])
-        msg.body="Hey how are you? Is everything okay?"
-        mail.send(msg)
+    # if request.method == 'POST':
+    #     email= request.form.get("Email")
+    #     mensaje= request.form["mensaje"]
+
+    #     msg= Message("soy el asunto", sender="oriailigo1@gmail.com", recipients=[email])
+    #     msg.body= mensaje
+    #     mail.send(msg)
 
     return rutas.render_contacto()
 ###########################
