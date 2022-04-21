@@ -143,3 +143,8 @@ body{
   position: relative;
   overflow: hidden;
 }
+
+/* colores de los cards */
+.bg-rosa{
+  background-color: #FFDFD5;
+}

@@ -33,3 +33,6 @@ document.querySelector("#ver-detalle-1").addEventListener("click",()=>{
 document.querySelector("#btn-banner-1").addEventListener("click",()=>{
     document.querySelector("#banner-1").classList.toggle('banner--active');
 });
+
+
+// carrousel piola
