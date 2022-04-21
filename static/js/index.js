@@ -2,10 +2,8 @@
 window.addEventListener('DOMContentLoaded', (event) => {
     const image = document.getElementById("paralax");
     const nav = document.querySelector("nav");
-
     navbarHideEffect(nav,"nav--hidden");
     createParallax(image);
-
 });
 
 
