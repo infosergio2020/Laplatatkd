@@ -45,6 +45,13 @@
   background-color: var(--optional-white);
 }
 
+.txt-color-sl{
+  color: var(--secondary-light);
+}
+
+.txt-color-sd{
+  color: var(--secondary-dark);
+}
 
 
 /* utils end */
@@ -114,3 +121,25 @@ body{
   }    
 }
 
+/* banner */
+
+.banner{
+  position: absolute;
+  left: 0;
+  top: 100%;
+
+  width: 100%;
+  height: 100%;
+
+  background-color: #c8b700c4;
+  transition: all .3s ease-in-out;
+}
+
+.banner--active{
+  top: 0 !important;
+}
+
+.pos-relative{
+  position: relative;
+  overflow: hidden;
+}

@@ -25,3 +25,11 @@ new simpleParallax(image, {
 //     var elems = document.querySelectorAll('.parallax');
 //     var instances = M.Parallax.init(elems, options);
 // });
+
+document.querySelector("#ver-detalle-1").addEventListener("click",()=>{
+    document.querySelector("#banner-1").classList.toggle('banner--active');
+});
+
+document.querySelector("#btn-banner-1").addEventListener("click",()=>{
+    document.querySelector("#banner-1").classList.toggle('banner--active');
+});
