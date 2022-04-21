@@ -1,5 +1,5 @@
 from flask import render_template,request
-from .mock_data import quienesSomos, membership, contacto, sedesHorarios, noticias, botones_navbar
+from .mock_data import quienesSomos, membership, clase_info, contacto, sedesHorarios, noticias, botones_navbar
 
 class CustomRouter:
     # index
