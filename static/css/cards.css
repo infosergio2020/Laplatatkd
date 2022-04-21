@@ -1,23 +1,35 @@
-.mb-3, .my-3 {
-    margin-bottom: 1rem!important;
+
+/* banner */
+
+.banner{
+
+    background-image: url("../img/Taekwondo-512.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: center center;
+
+    position: absolute;
+    left: 0;
+    top: 100%;
+  
+    width: 100%;
+    height: 100%;
+    /* ffdc3be0 */
+    /* c8b700c4 */
+    /* f8e343ed */
+
+    background-color: #f8e343ed;
+    transition: all .4s cubic-bezier(0.22, 0.61, 0.36, 1);
 }
-@media (min-width: 576px){
-    .card-deck {
-        -webkit-box-orient: horizontal;
-        -webkit-box-direction: normal;
-        -ms-flex-flow: row wrap;
-        flex-flow: row wrap;
-        margin-right: -15px;
-        margin-left: -15px;
-    }
-}
-.card-deck {
-    /* display: -webkit-box;
-    display: -ms-flexbox; */
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: row;
-    justify-content: center;
-}
+  .banner--active{
+    top: 0 !important;
+  }
+  
+  .card_rel{
+    position: relative;
+    overflow: hidden;
+  }
+
+  .card-radius-1{
+    border-radius: 1rem;
+  }

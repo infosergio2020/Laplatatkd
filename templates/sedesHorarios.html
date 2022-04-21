@@ -10,66 +10,29 @@
 </div>
 <div class="container-md">
   
-<!-- 
-  <div class="row">
-    <div class="col txt-color-sl">
-      <img width="90%" src="https://scontent.faep9-2.fna.fbcdn.net/v/t1.6435-9/51749983_2253074108047056_2326203529313648640_n.jpg?_nc_cat=110&ccb=1-5&_nc_sid=e3f864&_nc_ohc=5jbwqmagfgYAX_mOfa6&_nc_oc=AQl9rbyofOOifaq-9Ggs1jBzw49o5ll1W4OJR5X9I8opNkXz5sJMeRa6bSCBzb6wUWc&_nc_ht=scontent.faep9-2.fna&oh=00_AT8tUhWDPAdiiR4FHaQozuRcnH0IsDhXDeEFzPEcZbGsOQ&oe=6284758B" class="rounded mx-auto d-block" alt="...">
-      <small>La plata</small>
-    </div>
-    <div class="col txt-color-sl">
-      <h3 class="txt-color-sd">Academia Kukkiwon</h3>
-      <p>
-        Centro de práctica y formación de la Asociación de Taekwondo de La Plata
-      </p>
-      <h4 class="txt-color-sd">Ubicacion:</h4>
-      <p>
-        Calle 25 Nro 1226 e/57 y 58, 1900 La Plata
-      </p>
-
-    </div>
-  </div>
-
-  <div class="row">
-    <p>Horario de sede:</p>
-
-    <table class="table table-dark table-striped">
-      <tr>
-        <th>Día</th>
-        <th>Horario</th>
-        <th>Modalidad</th>
-        <th>Instructor</th>
-      </tr>
-      {% for horario in horarios_sede %}
-      <tr>
-        <td >{{horario.dia}}</td>
-        <td >{{horario.horario}}</td>
-        <td >{{horario.modalidad}}</td>
-        <td >{{horario.instructor}}</td>
-      </tr>
-      {% endfor %}
-    </table>
-  </div>
- -->
-
-
  <div class="row">
-   <div class="col">
-    <div class="card pos-relative" style="width: 18rem;">
-      <img src="{{url_for('static', filename = './img/taekwondo-svgrepo-com.svg')}}" class="card-img-top" alt="...">
-      <div class="card-body text-dark">
-        <h3>Academia-kukkiwong</h3>
-      </div>
-      <div id="banner-1" class="banner">
-        <div class="row my-5 text-center text-dark">
-          <p class="fs-5"><span class="text-uppercase fw-bold"> nombre:</span> Pepe</p>
-          <p class="fs-5"><span class="text-uppercase fw-bold"> horario: </span> 6hs-22hs </p>
-          <p class="fs-5"><span class="text-uppercase fw-bold"> modalidad: </span> infantil</p>
-          <button id="btn-banner-1" class="btn btn-warning text-uppercase fw-bold"> cerrar </button>    
+  {% for profe in lista_profes %}
+   <div class="col m-2">
+      <div class="card card_rel card-radius-1" style="width: 18rem;">
+        <img src={{profe.foto}} class="card-img-top" alt="...">
+        <div class="card-body text-dark">
+          <h3 class="text-center">{{profe.nombre}}</h3>
         </div>
+        <div id="banner-{{loop.index}}" class="banner">
+          <div class="row my-5 mx-auto text-dark">
+            <p class="fs-5"><span class="text-uppercase fw-bold"> nombre:</span> {{profe.nombre}}</p>
+            <p class="fs-5"><span class="text-uppercase fw-bold"> turno:</span> {{profe.turno}}</p>
+            <p class="fs-5"><span class="text-uppercase fw-bold"> edad:</span> {{profe.edades}}</p>
+            <p class="fs-5"><span class="text-uppercase fw-bold"> dias:</span> {{profe.dias}}</p>
+            <!-- boton para cerrar el banner -->
+            <button class="btn btn-warning text-uppercase fw-bold" onclick="toggleCard('banner-{{loop.index}}','banner--active')"> cerrar </button>    
+          </div>
+        </div>
+        <!-- boton para abrir el banner -->
+        <button class="btn btn-warning" onclick="toggleCard('banner-{{loop.index}}','banner--active')"> ver detalle </button>
       </div>
-      <button id="ver-detalle-1" class="btn btn-warning"> ver detalle </button>
-    </div>
    </div>
+  {% endfor %}
  </div>
 
 

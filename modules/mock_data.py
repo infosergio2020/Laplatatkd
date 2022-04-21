@@ -54,12 +54,24 @@ botones_navbar = [
 
 ]
 
-fechas = [
-    {"dia":"miércoles","horario":"16:00–22:00","modalidad":"infantil", "instructor":"maestro xyanling" },
-    {"dia":"jueves","horario":"16:00–22:00","modalidad":"infantil", "instructor":"maestro xyanling" },
-    {"dia":"viernes","horario":"18:00–22:00","modalidad":"infantil", "instructor":"maestro xyanling" },
-    {"dia":"sabado","horario":"cerrado","modalidad":"infantil", "instructor":"maestro xyanling" },
-    {"dia":"domingo","horario":"cerrado","modalidad":"infantil", "instructor":"maestro xyanling" },
-    {"dia":"lunes","horario":"16:00–22:00","modalidad":"infantil", "instructor":"maestro xyanling" },
-    {"dia":"martes","horario":"18:00–22:00","modalidad":"infantil", "instructor":"maestro xyanling" },
-    ]
+
+# si declara fotos locales entonces use {{url_for('static', filename = sede.foto_s )}}
+# https://source.unsplash.com/W2XfQIptWYs/450x650
+
+# NOTA: tamaños definidos small: 640x425; medium: 1920x1276; large: 2400x1595; 
+
+clase_info = [
+        {
+            "foto":"https://source.unsplash.com/HYDUXzWSF5I/450x650",
+            "nombre":"nombre-1",
+            "turno":"turno-1",
+            "edades":"de 3 a 5 años",
+            "dias":"lunes, jueves y viernes"
+        },{
+            "foto":"https://source.unsplash.com/ngd2uo1eyZg/640x425",
+            "nombre":"nombre-2",
+            "turno":"turno-2",
+            "edades":"de 6 a 13 años",
+            "dias":"martes y miercoles"
+        }
+            ]
