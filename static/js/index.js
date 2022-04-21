@@ -9,6 +9,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
 });
 
 
+
 // funcion encargada de aplicar estilos para esconder el navbar cuando se hace scrollY (nav--hidden)
 function navbarHideEffect(nav,clase) {
     let lastScrollY = window.scrollY; // te da un numero de 0 a n que simboliza el nro de pixels que se desplaza desde el origen
