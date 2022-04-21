@@ -106,43 +106,6 @@ body{
   background-position: center center;
 }
 
-.nav-transition-1{
-  transition: all .2s ease-in-out;
-}
-
-.nav--hidden{
-  transform: translateY(calc(-1 * 328px));
-}
-
-
-@media (min-width: 768px){
-  .nav--hidden{
-    transform: translateY(calc(-1 * 130px));
-  }    
-}
-
-/* banner */
-
-.banner{
-  position: absolute;
-  left: 0;
-  top: 100%;
-
-  width: 100%;
-  height: 100%;
-
-  background-color: #c8b700c4;
-  transition: all .3s ease-in-out;
-}
-
-.banner--active{
-  top: 0 !important;
-}
-
-.pos-relative{
-  position: relative;
-  overflow: hidden;
-}
 
 /* colores de los cards */
 .bg-rosa{
