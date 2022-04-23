@@ -1,41 +1,24 @@
 beneficios = [
     {
-        "icono":"timer.svg",
+        "icono":"static/img/icono/like.svg",
         "title":"Classes start whenever you decide",
         "text":"I'm a paragraph. Click here to add your own text and edit me. Let your users get to know you."
     },
     {
-        "icono":"users.svg",
+        "icono":"static/img/icono/money.svg",
         "title":"Try new classes and styles",
         "text":"I'm a paragraph. Click here to add your own text and edit me. Let your users get to know you."
     },
     {
-        "icono":"like.svg",
+        "icono":"static/img/icono/timer.svg",
         "title":"Choose your favorite yoga teachers",
         "text":"I'm a paragraph. Click here to add your own text and edit me. Let your users get to know you."
     },
     {
-        "icono":"money.svg",
+        "icono":"static/img/icono/users.svg",
         "title":"Pay Per Class",
         "text":"I'm a paragraph. Click here to add your own text and edit me. Let your users get to know you."
     },
-
-    #     {
-    #     "title":"Classes start whenever you decide",
-    #     "text":"I'm a paragraph. Click here to add your own text and edit me. Let your users get to know you."
-    # },
-    # {
-    #     "title":"Try new classes and styles",
-    #     "text":"I'm a paragraph. Click here to add your own text and edit me. Let your users get to know you."
-    # },
-    # {
-    #     "title":"Choose your favorite yoga teachers",
-    #     "text":"I'm a paragraph. Click here to add your own text and edit me. Let your users get to know you."
-    # },
-    # {
-    #     "title":"Pay Per Class",
-    #     "text":"I'm a paragraph. Click here to add your own text and edit me. Let your users get to know you."
-    # },
 ]
 
 noticias = [
@@ -102,22 +85,18 @@ botones_navbar = [
     {
         "title":"Quiénes somos",
         "url":"/quienesSomos",
-        "icono":"{{url_for('static', filename = 'img/icono/' )}}"
     },
     {
         "title":"Sedes y horarios",
         "url":"/sedesHorarios",
-        "icono":"{{url_for('static', filename = 'img/icono/' )}}"
     },
     {
         "title":"Membresía",
         "url":"/membership",
-        "icono":"{{url_for('static', filename = 'img/icono/' )}}"
     },
     {
         "title":"Contacto",
         "url":"/contacto",
-        "icono":"{{url_for('static', filename = 'img/icono/' )}}"
     },
 
 ]
