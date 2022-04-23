@@ -109,7 +109,7 @@ botones_navbar = [
 
 clase_info = [
         {
-            "foto":"https://source.unsplash.com/HYDUXzWSF5I/450x650",
+            "foto":"https://source.unsplash.com/HYDUXzWSF5I/640x425",
             "nombre":"nombre-1",
             "turno":"turno-1",
             "edades":"de 3 a 5 años",
@@ -119,6 +119,34 @@ clase_info = [
             "nombre":"nombre-2",
             "turno":"turno-2",
             "edades":"de 6 a 13 años",
+            "dias":"martes y miercoles"
+        },
+        {
+            "foto":"https://source.unsplash.com/igLzPKOvZNw/640x425",
+            "nombre":"nombre-3",
+            "turno":"turno-3",
+            "edades":"de 8 a 18 años",
+            "dias":"martes y miercoles"
+        },
+        {
+            "foto":"https://source.unsplash.com/XS5C2AmDsLU/640x425",
+            "nombre":"nombre-4",
+            "turno":"turno-4",
+            "edades":"de 19 a 25 años",
+            "dias":"lunes, jueves y viernes"
+        },
+        {
+            "foto":"https://source.unsplash.com/js6cGb_SMKk/640x425",
+            "nombre":"nombre-5",
+            "turno":"turno-5",
+            "edades":"de 25 a 32 años",
+            "dias":"martes y miercoles"
+        },
+        {
+            "foto":"https://source.unsplash.com/cVLOqm8sSXc/640x425",
+            "nombre":"nombre-6",
+            "turno":"turno-6",
+            "edades":"de 33 a 45 años",
             "dias":"martes y miercoles"
         }
             ]
