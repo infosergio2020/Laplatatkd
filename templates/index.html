@@ -126,13 +126,13 @@
             <!-- beneficios -->
 
             <div class="container">
-<<<<<<< HEAD
               <div class="row mb-4">
                   {% for b in bene %}
                   
                   <div class="col-md-6">
                     <div class="card text-center bg-rosa text-black">
                       <div class="card-body">
+                        <img src={{b.icono}} alt="icono">
                         <h5 class="card-title">{{b.title}}</h5>
                         <p class="card-text"> {{b.text}}</p>
                       </div>
@@ -143,21 +143,6 @@
                     </div>  
                     <div class="row mb-4">
                   {% endif %}
-=======
-              <h1>Beneficios</h1>
-              <div class="row">
-                  {% for b in bene %}
-                  
-                      <div class="col-md-6 mb-2">
-                        <div class="card text-center bg-rosa text-black">
-                          <div class="card-body">
-                            <img src={{b.icono}} alt="icono">
-                            <h5 class="card-title">{{b.title}}</h5>
-                            <p class="card-text"> {{b.text}}</p>
-                          </div>
-                        </div>         
-                      </div>  
->>>>>>> e90845cac416d37add1be17cbf1f742212d82237
                   
                   {% endfor %}
                 </div>

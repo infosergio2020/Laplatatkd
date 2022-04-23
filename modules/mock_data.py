@@ -1,21 +1,23 @@
 beneficios = [
     {
-        "icono":"timer.svg",
+        "icono":"{{url_for('static', filename = 'img/icono/timer.svg' )}}",
         "title":"Classes start whenever you decide",
         "text":"I'm a paragraph. Click here to add your own text and edit me. Let your users get to know you."
     },
     {
-        "icono":"users.svg",
+
+        "icono":"{{url_for('static', filename = 'img/icono/users.svg' )}}",
         "title":"Try new classes and styles",
         "text":"I'm a paragraph. Click here to add your own text and edit me. Let your users get to know you."
     },
     {
-        "icono":"like.svg",
+
+        "icono":"{{url_for('static', filename = 'img/icono/like.svg' )}}",
         "title":"Choose your favorite yoga teachers",
         "text":"I'm a paragraph. Click here to add your own text and edit me. Let your users get to know you."
     },
     {
-        "icono":"money.svg",
+        "icono":"{{url_for('static', filename = 'img/icono/money.svg' )}}",
         "title":"Pay Per Class",
         "text":"I'm a paragraph. Click here to add your own text and edit me. Let your users get to know you."
     },
