@@ -15,6 +15,23 @@ beneficios = [
         "title":"Pay Per Class",
         "text":"I'm a paragraph. Click here to add your own text and edit me. Let your users get to know you."
     },
+
+        {
+        "title":"Classes start whenever you decide",
+        "text":"I'm a paragraph. Click here to add your own text and edit me. Let your users get to know you."
+    },
+    {
+        "title":"Try new classes and styles",
+        "text":"I'm a paragraph. Click here to add your own text and edit me. Let your users get to know you."
+    },
+    {
+        "title":"Choose your favorite yoga teachers",
+        "text":"I'm a paragraph. Click here to add your own text and edit me. Let your users get to know you."
+    },
+    {
+        "title":"Pay Per Class",
+        "text":"I'm a paragraph. Click here to add your own text and edit me. Let your users get to know you."
+    },
 ]
 
 noticias = [
