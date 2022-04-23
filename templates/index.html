@@ -124,7 +124,9 @@
             </script>
             
             <!-- beneficios -->
+
             <div class="container">
+<<<<<<< HEAD
               <div class="row mb-4">
                   {% for b in bene %}
                   
@@ -141,32 +143,42 @@
                     </div>  
                     <div class="row mb-4">
                   {% endif %}
+=======
+              <h1>Beneficios</h1>
+              <div class="row">
+                  {% for b in bene %}
+                  
+                      <div class="col-md-6 mb-2">
+                        <div class="card text-center bg-rosa text-black">
+                          <div class="card-body">
+                            <img src={{b.icono}} alt="icono">
+                            <h5 class="card-title">{{b.title}}</h5>
+                            <p class="card-text"> {{b.text}}</p>
+                          </div>
+                        </div>         
+                      </div>  
+>>>>>>> e90845cac416d37add1be17cbf1f742212d82237
                   
                   {% endfor %}
                 </div>
               
-              <!-- <div class="row">
-                <div class="col m-2">
-                  <div class="card text-center bg-rosa text-black" style="width: 18rem;">
-                    <div class="card-body">
-                      <h5 class="card-title">lol</h5>
-                      <p class="card-text"> lol</p>
-                    </div>
-                  </div>   
-                                
-                </div>  
-                <div class="col m-2">
-                  <div class="card text-center bg-rosa text-black" style="width: 18rem;">
-                    <div class="card-body">
-                      <h5 class="card-title">lol</h5>
-                      <p class="card-text"> lol</p>
-                    </div>
-                  </div>         
-                </div>  
-              </div>  -->
 
             </div>
+            <div class="container">
+              <h1>
+                Porque entrenar con nosotros
+              </h1>
+              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. In, doloremque autem rerum ut dolore soluta reiciendis vero ab mollitia minus. Voluptas ipsa ullam iusto sint necessitatibus. Numquam recusandae aliquam vero!</p>
+            </div>
   </div> 
+<!-- notas: 
+index
+despues de beneficios:
+1- porque entrenar con nosotros: texto y fin para el index.
 
+footer: las redes sociañes ---- 
+nota: el logo de wassap se repite en todas las paginas....
+
+--> 
        
 {% endblock %}

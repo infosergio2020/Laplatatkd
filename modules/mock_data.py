@@ -1,37 +1,41 @@
 beneficios = [
     {
+        "icono":"timer.svg",
         "title":"Classes start whenever you decide",
         "text":"I'm a paragraph. Click here to add your own text and edit me. Let your users get to know you."
     },
     {
+        "icono":"users.svg",
         "title":"Try new classes and styles",
         "text":"I'm a paragraph. Click here to add your own text and edit me. Let your users get to know you."
     },
     {
+        "icono":"like.svg",
         "title":"Choose your favorite yoga teachers",
         "text":"I'm a paragraph. Click here to add your own text and edit me. Let your users get to know you."
     },
     {
+        "icono":"money.svg",
         "title":"Pay Per Class",
         "text":"I'm a paragraph. Click here to add your own text and edit me. Let your users get to know you."
     },
 
-        {
-        "title":"Classes start whenever you decide",
-        "text":"I'm a paragraph. Click here to add your own text and edit me. Let your users get to know you."
-    },
-    {
-        "title":"Try new classes and styles",
-        "text":"I'm a paragraph. Click here to add your own text and edit me. Let your users get to know you."
-    },
-    {
-        "title":"Choose your favorite yoga teachers",
-        "text":"I'm a paragraph. Click here to add your own text and edit me. Let your users get to know you."
-    },
-    {
-        "title":"Pay Per Class",
-        "text":"I'm a paragraph. Click here to add your own text and edit me. Let your users get to know you."
-    },
+    #     {
+    #     "title":"Classes start whenever you decide",
+    #     "text":"I'm a paragraph. Click here to add your own text and edit me. Let your users get to know you."
+    # },
+    # {
+    #     "title":"Try new classes and styles",
+    #     "text":"I'm a paragraph. Click here to add your own text and edit me. Let your users get to know you."
+    # },
+    # {
+    #     "title":"Choose your favorite yoga teachers",
+    #     "text":"I'm a paragraph. Click here to add your own text and edit me. Let your users get to know you."
+    # },
+    # {
+    #     "title":"Pay Per Class",
+    #     "text":"I'm a paragraph. Click here to add your own text and edit me. Let your users get to know you."
+    # },
 ]
 
 noticias = [
@@ -97,19 +101,23 @@ sedesHorarios={
 botones_navbar = [
     {
         "title":"Quiénes somos",
-        "url":"/quienesSomos"
+        "url":"/quienesSomos",
+        "icono":"{{url_for('static', filename = 'img/icono/' )}}"
     },
     {
         "title":"Sedes y horarios",
-        "url":"/sedesHorarios"
+        "url":"/sedesHorarios",
+        "icono":"{{url_for('static', filename = 'img/icono/' )}}"
     },
     {
         "title":"Membresía",
-        "url":"/membership"
+        "url":"/membership",
+        "icono":"{{url_for('static', filename = 'img/icono/' )}}"
     },
     {
         "title":"Contacto",
-        "url":"/contacto"
+        "url":"/contacto",
+        "icono":"{{url_for('static', filename = 'img/icono/' )}}"
     },
 
 ]
