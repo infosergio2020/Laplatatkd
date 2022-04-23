@@ -125,17 +125,22 @@
             
             <!-- beneficios -->
             <div class="container">
-              <div class="row">
+              <div class="row mb-4">
                   {% for b in bene %}
                   
-                      <div class="col-md-6 mb-2">
-                        <div class="card text-center bg-rosa text-black">
-                          <div class="card-body">
-                            <h5 class="card-title">{{b.title}}</h5>
-                            <p class="card-text"> {{b.text}}</p>
-                          </div>
-                        </div>         
-                      </div>  
+                  <div class="col-md-6">
+                    <div class="card text-center bg-rosa text-black">
+                      <div class="card-body">
+                        <h5 class="card-title">{{b.title}}</h5>
+                        <p class="card-text"> {{b.text}}</p>
+                      </div>
+                    </div>         
+                  </div>  
+
+                  {% if loop.index % 4 == 0 %}
+                    </div>  
+                    <div class="row mb-4">
+                  {% endif %}
                   
                   {% endfor %}
                 </div>
