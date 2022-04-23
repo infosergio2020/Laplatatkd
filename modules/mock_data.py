@@ -5,7 +5,7 @@ beneficios = [
         "text":"I'm a paragraph. Click here to add your own text and edit me. Let your users get to know you."
     },
     {
-        "icono":"static/img/icono/money.svg",
+        "icono":"static/img/icono/like.svg",
         "title":"Try new classes and styles",
         "text":"I'm a paragraph. Click here to add your own text and edit me. Let your users get to know you."
     },
