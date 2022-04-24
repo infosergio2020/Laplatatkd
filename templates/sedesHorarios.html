@@ -6,65 +6,143 @@
   4- mapa de la sede.
   (estos 4 se repiten en la misma pagina)
 -->
-<div id="sedes" class="container-md">
-  <div class="text-center txt-color-sl my-4">
-    <h1>Nombre de la Sede actual</h1>
-    <h2>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</h2>
-  </div>
-    
-</div>
-<div class="container-md">
-  
- <div class="row">
-  {% for profe in lista_profes %}
-   <div class="col m-2">
-      <div class="card card_rel card-radius-1" style="width: 18rem;">
-        <img src={{profe.foto}} class="card-img-top" alt="...">
-        <div class="card-body text-dark">
-          <h3 class="text-center">{{profe.nombre}}</h3>
-        </div>
-        <div id="banner-{{loop.index}}" class="banner">
-          <div class="row my-5 mx-auto text-dark">
-            <p class="fs-5"><span class="text-uppercase fw-bold"> nombre:</span> {{profe.nombre}}</p>
-            <p class="fs-5"><span class="text-uppercase fw-bold"> turno:</span> {{profe.turno}}</p>
-            <p class="fs-5"><span class="text-uppercase fw-bold"> edad:</span> {{profe.edades}}</p>
-            <p class="fs-5"><span class="text-uppercase fw-bold"> dias:</span> {{profe.dias}}</p>
-            <!-- boton para cerrar el banner -->
-            <button class="btn btn-warning text-uppercase fw-bold" onclick="toggleCard('banner-{{loop.index}}','banner--active')"> cerrar </button>    
-          </div>
-        </div>
-        <!-- boton para abrir el banner -->
-        <button class="btn btn-warning" onclick="toggleCard('banner-{{loop.index}}','banner--active')"> ver detalle </button>
-      </div>
-   </div>
-  {% endfor %}
- </div>
 
-<!-- 
-<div class="row">
-  <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <img src="https://source.unsplash.com/HYDUXzWSF5I/640x425" class="d-block w-100" alt="...">
-      </div>
-      <div class="carousel-item">
-        <img src="https://source.unsplash.com/HYDUXzWSF5I/640x425" class="d-block w-100" alt="...">
-      </div>
-      <div class="carousel-item">
-        <img src="https://source.unsplash.com/HYDUXzWSF5I/640x425" class="d-block w-100" alt="...">
+<div class="container-md">
+    <div id="sedes" class="row">
+      <div class="text-center txt-color-sl my-4">
+        <h1>Nombre de la Sede actual</h1>
+        <h2>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</h2>
       </div>
     </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-    </button>
-  </div>
-</div> -->
 
+    <div class="row">
+      <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          {% for profe in lista_profes %}
+            {% if loop.index - 1 == 0 %}
+              <button type="button" data-bs-target="#carouselExampleControls" data-bs-slide-to="{{loop.index - 1}}" class="active" aria-current="true" aria-label="Slide {{loop.index}}"></button>
+            {% else %}
+              <button type="button" data-bs-target="#carouselExampleControls" data-bs-slide-to="{{loop.index - 1}}" aria-label="Slide {{loop.index}}"></button>
+            {% endif %}
+          {% endfor %}
+        </div>
+        <div class="carousel-inner">
+          {% for profe in lista_profes %}
+            {% if loop.index - 1 == 0 %}
+              <div class="carousel-item active" data-bs-interval="false">
+            {% else %}
+              <div class="carousel-item" data-bs-interval="false">
+            {% endif %}
+            <div class="row my-5">
+                <div class="col" style="margin: 0 !important;">
+                    <div class="card card_rel card-radius-1" style="width: 18rem;">
+                      <img src={{profe.foto}} class="card-img-top" alt="...">
+                      <div class="card-body text-dark">
+                        <h3 class="text-center">{{profe.nombre}}</h3>
+                      </div>
+                      <div id="banner-{{loop.index}}" class="banner">
+                        <div class="row my-5 mx-auto text-dark">
+                          <p class="fs-5"><span class="text-uppercase fw-bold"> nombre:</span> {{profe.nombre}}</p>
+                          <p class="fs-5"><span class="text-uppercase fw-bold"> turno:</span> {{profe.turno}}</p>
+                          <p class="fs-5"><span class="text-uppercase fw-bold"> edad:</span> {{profe.edades}}</p>
+                          <p class="fs-5"><span class="text-uppercase fw-bold"> dias:</span> {{profe.dias}}</p>
+                          <!-- boton para cerrar el banner -->
+                          <button class="btn btn-warning text-uppercase fw-bold" onclick="toggleCard('banner-{{loop.index}}','banner--active')"> cerrar </button>    
+                        </div>
+                      </div>
+                      <!-- boton para abrir el banner -->
+                      <button class="btn btn-warning" onclick="toggleCard('banner-{{loop.index}}','banner--active')"> ver detalle </button>
+                    </div>
+                </div>
+
+                <div class="col" style="margin: 0 !important;">
+                  <div class="card card_rel card-radius-1" style="width: 18rem;">
+                    <img src={{profe.foto}} class="card-img-top" alt="...">
+                    <div class="card-body text-dark">
+                      <h3 class="text-center">{{profe.nombre}}</h3>
+                    </div>
+                    <div id="banner-{{loop.index}}" class="banner">
+                      <div class="row my-5 mx-auto text-dark">
+                        <p class="fs-5"><span class="text-uppercase fw-bold"> nombre:</span> {{profe.nombre}}</p>
+                        <p class="fs-5"><span class="text-uppercase fw-bold"> turno:</span> {{profe.turno}}</p>
+                        <p class="fs-5"><span class="text-uppercase fw-bold"> edad:</span> {{profe.edades}}</p>
+                        <p class="fs-5"><span class="text-uppercase fw-bold"> dias:</span> {{profe.dias}}</p>
+                        <!-- boton para cerrar el banner -->
+                        <button class="btn btn-warning text-uppercase fw-bold" onclick="toggleCard('banner-{{loop.index}}','banner--active')"> cerrar </button>    
+                      </div>
+                    </div>
+                    <!-- boton para abrir el banner -->
+                    <button class="btn btn-warning" onclick="toggleCard('banner-{{loop.index}}','banner--active')"> ver detalle </button>
+                  </div>
+                </div>
+                <div class="col" style="margin: 0 !important;">
+                    <div class="card card_rel card-radius-1" style="width: 18rem;">
+                      <img src={{profe.foto}} class="card-img-top" alt="...">
+                      <div class="card-body text-dark">
+                        <h3 class="text-center">{{profe.nombre}}</h3>
+                      </div>
+                      <div id="banner-{{loop.index}}" class="banner">
+                        <div class="row my-5 mx-auto text-dark">
+                          <p class="fs-5"><span class="text-uppercase fw-bold"> nombre:</span> {{profe.nombre}}</p>
+                          <p class="fs-5"><span class="text-uppercase fw-bold"> turno:</span> {{profe.turno}}</p>
+                          <p class="fs-5"><span class="text-uppercase fw-bold"> edad:</span> {{profe.edades}}</p>
+                          <p class="fs-5"><span class="text-uppercase fw-bold"> dias:</span> {{profe.dias}}</p>
+                          <!-- boton para cerrar el banner -->
+                          <button class="btn btn-warning text-uppercase fw-bold" onclick="toggleCard('banner-{{loop.index}}','banner--active')"> cerrar </button>    
+                        </div>
+                      </div>
+                      <!-- boton para abrir el banner -->
+                      <button class="btn btn-warning" onclick="toggleCard('banner-{{loop.index}}','banner--active')"> ver detalle </button>
+                    </div>
+                </div>
+
+                <div class="col" style="margin: 0 !important;">
+                  <div class="card card_rel card-radius-1" style="width: 18rem;">
+                    <img src={{profe.foto}} class="card-img-top" alt="...">
+                    <div class="card-body text-dark">
+                      <h3 class="text-center">{{profe.nombre}}</h3>
+                    </div>
+                    <div id="banner-{{loop.index}}" class="banner">
+                      <div class="row my-5 mx-auto text-dark">
+                        <p class="fs-5"><span class="text-uppercase fw-bold"> nombre:</span> {{profe.nombre}}</p>
+                        <p class="fs-5"><span class="text-uppercase fw-bold"> turno:</span> {{profe.turno}}</p>
+                        <p class="fs-5"><span class="text-uppercase fw-bold"> edad:</span> {{profe.edades}}</p>
+                        <p class="fs-5"><span class="text-uppercase fw-bold"> dias:</span> {{profe.dias}}</p>
+                        <!-- boton para cerrar el banner -->
+                        <button class="btn btn-warning text-uppercase fw-bold" onclick="toggleCard('banner-{{loop.index}}','banner--active')"> cerrar </button>    
+                      </div>
+                    </div>
+                    <!-- boton para abrir el banner -->
+                    <button class="btn btn-warning" onclick="toggleCard('banner-{{loop.index}}','banner--active')"> ver detalle </button>
+                  </div>
+                </div>
+            </div>
+              
+                
+            </div>
+          {% endfor %}
+        </div>
+
+        <!-- controless -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+
+
+    </div>
+
+    <div class="row">
+      <h3>My Google Maps Demo</h3>
+
+      <div id="map"></div>
+    </div>
 
 </div>
 {% endblock %}
