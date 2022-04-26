@@ -114,7 +114,8 @@ clase_info = [
             "turno":"turno-1",
             "edades":"de 3 a 5 años",
             "dias":"lunes, jueves y viernes"
-        },{
+        },
+        {
             "foto":"https://source.unsplash.com/ngd2uo1eyZg/640x425",
             "nombre":"nombre-2",
             "turno":"turno-2",
@@ -149,4 +150,4 @@ clase_info = [
             "edades":"de 33 a 45 años",
             "dias":"martes y miercoles"
         }
-            ]
+        ]
