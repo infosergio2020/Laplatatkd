@@ -33,9 +33,8 @@
             {% else %}
               <div class="carousel-item" data-bs-interval="false">
             {% endif %}
-            <div class="row my-5">
-                <div class="col" style="margin: 0 !important;">
-                    <div class="card card_rel card-radius-1" style="width: 18rem;">
+
+                    <div class="card card_rel card-radius-1 my-5" style="width: 18rem;">
                       <img src={{profe.foto}} class="card-img-top" alt="...">
                       <div class="card-body text-dark">
                         <h3 class="text-center">{{profe.nombre}}</h3>
@@ -53,9 +52,7 @@
                       <!-- boton para abrir el banner -->
                       <button class="btn btn-warning" onclick="toggleCard('banner-{{loop.index}}','banner--active')"> ver detalle </button>
                     </div>
-                </div>
 
-            </div>
               
                 
             </div>
