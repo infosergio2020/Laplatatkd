@@ -58,14 +58,17 @@
 
 
 /* utils end */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;700;800&family=Source+Sans+Pro:wght@400;700;900&display=swap');
 
 html {
     scroll-behavior: smooth;
+    line-height: 1.5;
+    font-family: 'Open Sans', sans-serif;
   }
 
 body{
   position: relative;
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   padding-top: 140px;
   background-color: var(--optional-white);
   color: var(--text-on-p);
@@ -139,4 +142,23 @@ body{
   height: 400px; 
   position: relative; 
   outline: none;
+}
+
+
+/* estilo para phrases section */
+
+.section_phrases{
+  margin: 0;
+  padding: 3.2rem;
+}
+
+
+.container-card-phrases{
+  width: 100%;
+}
+
+@media (min-width: 768px){
+  .container-card-phrases{
+    width: 55%;
+  }
 }

@@ -75,3 +75,6 @@ def QuienesSomos():
 def SedesHorarios():
     return rutas.render_sedesHorarios()
 ###########################
+@app.route('/test')
+def Test():
+    return rutas.render_template_test()

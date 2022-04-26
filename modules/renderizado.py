@@ -20,3 +20,5 @@ class CustomRouter:
     def render_sedesHorarios(self):
         return render_template('sedesHorarios.html', links = botones_navbar, lista_profes=clase_info)
    
+    def render_template_test(self):
+        return render_template('test.html')
