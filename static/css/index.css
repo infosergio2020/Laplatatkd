@@ -2,15 +2,18 @@
 
 :root {
   /* black variations */
-  --primary: #212121;
+  /* --primary: #212121;
   --primary-light: #484848;
+  --primary-dark: #000000; */
+  --primary: #404040;
+  --primary-light: #595859;
   --primary-dark: #000000;
   /* yellow variations */
-  --secondary:#ffeb3b;
+  --secondary:#E2F263;
   --secondary-light:#ffff72;
-  --secondary-dark:#c8b900;
+  --secondary-dark:#D7F205;
   /*optional */
-  --optional-white:#040404;
+  --optional-white:#F2F2F2;
   /* text on parraph */
   --text-on-p:#fafafa;/*combinar con primary*/
   --text-on-s:#212121;/*combinar con secondary*/
@@ -96,6 +99,14 @@ body{
   height: 5rem;
 }
 
+.scale-x2{
+  transition: all .4s ease-in-out;
+}
+
+.scale-x2:hover,.scale-x2:focus-within{
+  transform: scale(1.2);
+}
+
 
 /* fondos */
 
@@ -110,7 +121,16 @@ body{
 /* colores de los cards */
 .bg-rosa{
   background-color: #FFDFD5;
+  transition: all .2s ease-in;
 }
+
+/* efecto para cambiar color cuando se pasa el curso por la tarjeta rosa */
+
+/* .bg-rosa:hover{
+  background-color: #404040;
+  color: #E2F263!important;
+  transform: scale(1.05);
+} */
 
 
 /* map */
