@@ -83,7 +83,7 @@ sedesHorarios={
 
 botones_navbar = [
     {
-        "title":"Quiénes somos",
+        "title":"Nosotros",
         "url":"/quienesSomos",
     },
     {
@@ -91,7 +91,7 @@ botones_navbar = [
         "url":"/sedesHorarios",
     },
     {
-        "title":"Membresía",
+        "title":"Socios",
         "url":"/membership",
     },
     {

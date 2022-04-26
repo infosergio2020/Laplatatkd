@@ -10,7 +10,7 @@
   --secondary-light:#ffff72;
   --secondary-dark:#c8b900;
   /*optional */
-  --optional-white:#F5F5F6;
+  --optional-white:#040404;
   /* text on parraph */
   --text-on-p:#fafafa;/*combinar con primary*/
   --text-on-s:#212121;/*combinar con secondary*/
@@ -64,7 +64,7 @@ body{
   position: relative;
   font-family: 'Source Sans Pro', sans-serif;
   padding-top: 140px;
-  background-color: var(--primary);
+  background-color: var(--optional-white);
   color: var(--text-on-p);
 }
 
