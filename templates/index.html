@@ -20,7 +20,88 @@
     />
   </div>
 </div>
+<!-- otro carrousel menos piola -->
+<div id="jquery-script-menu">
+  <div class="jquery-script-center">
+    <div class="jquery-script-ads">
+      <script
+        async
+        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2783044520727903"
+        crossorigin="anonymous"
+      ></script>
+      <!-- jQuery_demo -->
+      <ins
+        class="adsbygoogle"
+        style="display: inline-block; width: 728px; height: 90px"
+        data-ad-client="ca-pub-2783044520727903"
+        data-ad-slot="2780937993"
+      ></ins>
+      <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+      </script>
+    </div>
+    <div class="jquery-script-clear"></div>
+  </div>
+</div>
 
+<div
+  class="container text-dark"
+  id="featureContainer"
+  style="margin: 150px auto"
+>
+  <div class="row mx-auto my-2 justify-content-center">
+    <div id="featureCarousel" class="carousel slide" data-bs-ride="carousel">
+      <h1 class="font-weight-light float-start">Noticias</h1>
+      <!-- controles -->
+      <div class="float-end pe-md-4">
+        <a
+          class="indicator"
+          href="#featureCarousel"
+          role="button"
+          data-bs-slide="prev"
+        >
+          <span class="fas fa-chevron-left" aria-hidden="true"></span>
+        </a>
+        &nbsp;&nbsp;
+        <a
+          class="w-aut indicator"
+          href="#featureCarousel"
+          role="button"
+          data-bs-slide="next"
+        >
+          <span class="fas fa-chevron-right" aria-hidden="true"></span>
+        </a>
+      </div>
+      <div class="carousel-inner" role="listbox">
+        <div class="carousel-item active">
+          <div class="col-md-4">
+            <div class="card">
+              <div class="card-img">
+                <img
+                  src="https://source.unsplash.com/JTkibpa_Xv4/450x650"
+                  class="img-fluid"
+                />
+              </div>
+              <div class="card-img-overlays">Slide 1</div>
+            </div>
+          </div>
+        </div>
+        {% for img in noti %}
+        <div class="carousel-item">
+          <div class="col-md-4">
+            <div class="card">
+              <div class="card-img">
+                <img src="{{img.url}}" class="img-fluid" />
+              </div>
+              <div class="card-img-overlays">{{img.title}}</div>
+            </div>
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</div>
 
 <script>
   let items = document.querySelectorAll(
