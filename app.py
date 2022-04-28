@@ -1,6 +1,9 @@
 # comienzo
+from email import message
 from importlib.resources import path
-from flask import Flask, make_response,send_from_directory
+from flask import Flask, make_response, render_template, request,send_from_directory
+from flask_mail import Mail, Message
+import os
 from entorno import config
 from modules.renderizado import CustomRouter
 
@@ -17,6 +20,23 @@ rutas = CustomRouter()
 
 ##Configuracion del app
 app = Flask(__name__)
+
+##
+## Comienzo del gmail de sergio
+##
+# mail_settings = {
+#     "MAIL_SERVER": 'smtp.gmail.com',
+#     "MAIL_PORT": 465,
+#     "MAIL_USE_TLS": False,
+#     "MAIL_USE_SSL": True,
+#     "MAIL_USERNAME": "oriailigo1@gmail.com",
+#     "MAIL_PASSWORD": "Onepiecetoby1@!!"
+# }
+
+# app.config.update(mail_settings)
+# mail = Mail(app)
+## fin del gmail
+
 app.config.from_object(config)
 
 CORS(app)
@@ -30,3 +50,31 @@ def Index():
     return rutas.render_index()
 ###########################
 ###########################
+# Aqui se detallan las 4 paginas de la barra de navegacion
+@app.route('/contacto')
+def Contacto():
+    # if request.method == 'POST':
+    #     email= request.form.get("Email")
+    #     mensaje= request.form["mensaje"]
+
+    #     msg= Message("soy el asunto", sender="oriailigo1@gmail.com", recipients=[email])
+    #     msg.body= mensaje
+    #     mail.send(msg)
+
+    return rutas.render_contacto()
+###########################
+@app.route('/membership')
+def Membership():
+    return rutas.render_membership()
+###########################
+@app.route('/quienesSomos')
+def QuienesSomos():
+    return rutas.render_quienesSomos()
+###########################
+@app.route('/sedesHorarios')
+def SedesHorarios():
+    return rutas.render_sedesHorarios()
+###########################
+@app.route('/test')
+def Test():
+    return rutas.render_template_test()

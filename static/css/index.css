@@ -1,34 +1,83 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700;900&display=swap');
 
+:root {
+  /* black variations */
+  /* --primary: #212121;
+  --primary-light: #484848;
+  --primary-dark: #000000; */
+  --primary: #404040;
+  --primary-light: #595859;
+  --primary-dark: #000000;
+  /* yellow variations */
+  --secondary:#E2F263;
+  --secondary-light:#ffff72;
+  --secondary-dark:#D7F205;
+  /*optional */
+  --optional-white:#F2F2F2;
+  /* text on parraph */
+  --text-on-p:#fafafa;/*combinar con primary*/
+  --text-on-s:#212121;/*combinar con secondary*/
+}
+
+/* utils */
+.bg-p{
+  background-color: var(--primary);
+}
+
+.bg-p-dark{
+  background-color: var(--primary-dark)!important;
+}
+
+.bg-p-light{
+  background-color: var(--primary-light)!important;
+}
+
+.bg-s{
+  background-color: var(--secondary);
+}
+
+.bg-s-dark{
+  background-color: var(--secondary-dark)!important;
+}
+
+.bg-s-light{
+  background-color: var(--secondary-light)!important;
+}
+
+.bg-op-white{
+  background-color: var(--optional-white);
+}
+
+.txt-color-sl{
+  color: var(--secondary-light);
+}
+
+.txt-color-sd{
+  color: var(--secondary-dark);
+}
+
+
+/* utils end */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;700;800&family=Source+Sans+Pro:wght@400;700;900&display=swap');
+
 html {
     scroll-behavior: smooth;
+    line-height: 1.5;
+    font-family: 'Open Sans', sans-serif;
   }
 
 body{
-  font-family: 'Source Sans Pro', sans-serif;
+  position: relative;
+  font-family: 'Open Sans', sans-serif;
   padding-top: 140px;
-  background-color: #161827;
-  color: #ffffff;
+  background-color: var(--optional-white);
+  color: var(--text-on-p);
 }
 
 .abs-center{
     display: flex;
     align-items: center;
     justify-content: center;    
-}
-
-
-.color-yellow1{
-  text-decoration: none;
-  color:#D8FF06;
-  padding: .5rem;
-  transition: all .3s ease-in-out;
-}
-
-.color-yellow1:hover ,.color-yellow1:focus-within{
-  background-color: #daff0603;
-  border: 1px solid #D8FF06;
-  color: #B5BB71;
 }
 
 .azul-marino-bg{
@@ -53,6 +102,14 @@ body{
   height: 5rem;
 }
 
+.scale-x2{
+  transition: all .4s ease-in-out;
+}
+
+.scale-x2:hover,.scale-x2:focus-within{
+  transform: scale(1.2);
+}
+
 
 /* fondos */
 
@@ -61,4 +118,47 @@ body{
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
+}
+
+
+/* colores de los cards */
+.bg-rosa{
+  background-color: #FFDFD5;
+  transition: all .2s ease-in;
+}
+
+/* efecto para cambiar color cuando se pasa el curso por la tarjeta rosa */
+
+/* .bg-rosa:hover{
+  background-color: #404040;
+  color: #E2F263!important;
+  transform: scale(1.05);
+} */
+
+
+/* map */
+
+#map {
+  height: 400px; 
+  position: relative; 
+  outline: none;
+}
+
+
+/* estilo para phrases section */
+
+.section_phrases{
+  margin: 0;
+  padding: 3.2rem;
+}
+
+
+.container-card-phrases{
+  width: 100%;
+}
+
+@media (min-width: 768px){
+  .container-card-phrases{
+    width: 55%;
+  }
 }
