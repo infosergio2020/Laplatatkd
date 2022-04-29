@@ -1,23 +1,17 @@
 {% extends 'partials/_layout.html' %} {% block body %}
 <!-- Info del index-->
 
-<div class="container text-dark">
-  <h2>Asociación de tae kwon do y hapkido de La Plata</h2>
-  <p>
-    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laudantium
-    explicabo exercitationem placeat quasi, facere pariatur nam accusantium
-    omnis suscipit voluptatem, laborum fuga eligendi quos laboriosam cum eos ab.
-    Doloremque, repellat.
-  </p>
-  <!-- 1- imagen grande -->
-  <div class="mb-4">
-    <img
-      class="card-img-right flex-auto d-none d-md-block"
-      src="{{url_for('static', filename = './img/lugar.jpg')}}"
-      alt="Thumbnail [200x250]"
-      data-holder-rendered="true"
-      style="width: 100%; height: 100%"
-    />
+<div class="container p-rel">
+  <div class="hero"></div>
+  <div class="hero-info">
+      <h2 class="fs-1 text-center">Asociación de tae kwon do y hapkido de La Plata</h2>
+      <hr>
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laudantium
+        explicabo exercitationem placeat quasi, facere pariatur nam accusantium
+        omnis suscipit voluptatem, laborum fuga eligendi quos laboriosam cum eos ab.
+        Doloremque, repellat.
+      </p>
   </div>
 </div>
 <!-- otro carrousel menos piola -->
@@ -106,7 +100,8 @@
 <script
   src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
   integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI="
-  crossorigin="anonymous"></script>
+  crossorigin="anonymous"
+></script>
 <script>
   let items = document.querySelectorAll(
     "#featureContainer .carousel .carousel-item"
@@ -170,18 +165,71 @@
 </script>
 
 <!-- porque entrenar con nosotros -->
-<div class="bg-p-dark txt-color-sl my-0">
+<div class="bg-p-dark txt-color-sl m-0 p-0">
   <hr />
-  <h1 class="text-center m-5">Porque entrenar con nosotros</h1>
-  <p class="m-5">
-    Lorem, ipsum dolor sit amet consectetur adipisicing elit. In, doloremque
-    autem rerum ut dolore soluta reiciendis vero ab mollitia minus. Voluptas
-    ipsa ullam iusto sint necessitatibus. Numquam recusandae aliquam vero!
-  </p>
+  <h1 class="text-center my-5">Porque entrenar con nosotros</h1>
+
+  <div class="row m-0 p-4 text-dark">
+    <div class="col-md-4 d-flex justify-content-center mb-4">
+      <div class="card" style="width: 18rem">
+        <div class="card-header bg-rosa">
+          <div class="d-flex justify-content-center align-items-center py-2">
+              <img class="card-img-top img-card-wh46" src="{{url_for('static', filename = './img/health.png')}}" alt="Card image cap" />
+
+              <p class="mx-2 m-0">El sistema</p>
+          </div>
+        </div>
+        <div class="card-body text-dark">
+          <p class="card-text">
+            Nuestro objetivo es crear un programa de entrenamiento que erradique los desequilibrios o deficiencias físicas del cliente y mejore todos sus parámetros físicos mediante una actividad física controlada y supervisada por profesionales altamente cualificados.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4 d-flex justify-content-center mb-4">
+      <div class="card" style="width: 18rem">
+        <div class="card-header bg-rosa">
+          <div class="d-flex justify-content-center align-items-center py-2">
+            <img class="card-img-top img-card-wh46" src="{{url_for('static', filename = './img/trophy_3.png')}}" alt="Card image cap" />
+  
+            <p class="mx-2 m-0">Experiencia</p>
+          </div>
+        </div>
+        <div class="card-body text-dark">
+          <p class="card-text">
+            Más de 10 años de experiencia en el sector y un equipo de profesionales continuamente actualizados y con amplia experiencia propia en el mundo del taekwondo.
+            Resultados, formación continua, preparación, experiencia y especialización son los pilares desde los cuales construimos nuestra comunidad.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4 d-flex justify-content-center mb-4">
+      <div class="card" style="width: 18rem">
+
+        <div class="card-header bg-rosa">
+          <div class="d-flex justify-content-center align-items-center py-2">
+            <img class="card-img-top img-card-wh46" src="{{url_for('static', filename = './img/united.png')}}" alt="Card image cap" />
+
+            <p class="mx-2 m-0">El equipo</p>
+          </div>
+        </div>
+
+        <div class="card-body text-dark">
+          <p class="card-text">
+            La formación y preparación de nuestros maestros, está avalada por algunos de las más prestigiosas organizaciones y maestros internacionales (a,b,c,d,f, etc.).
+
+            Nuestro equipo está en constante formación continua con los mejores docentes del momento, aplicamos las últimas tendencias en métodos y técnicas de entrenamiento.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <hr />
 </div>
 <!-- beneficios -->
 
-<div class="container bg-p-light">
+<div class="container bg-p-light p-4">
   <h1 class="text-center">Beneficios</h1>
   <div class="row mb-4">
     {% for b in bene %}
@@ -207,36 +255,52 @@
 
 <div class="section_phrases">
   <div class="row flex-row-reverse align-items-center py-3">
-      <div class="col-md-6 pb-3">
-        <img src="https://www.taekwondonation.com/wp-content/uploads/2020/04/stretchingkick.jpg" width="100%" alt="">
+    <div class="col-md-6 pb-3">
+      <img
+        src="https://www.taekwondonation.com/wp-content/uploads/2020/04/stretchingkick.jpg"
+        width="100%"
+        alt=""
+      />
+    </div>
+    <div class="col-md-6 text-dark d-flex justify-content-center">
+      <div class="container-card-phrases">
+        <h3 class="text-uppercase">About Us</h3>
+        <p>
+          This is your About section. It’s a great space to tell your story and
+          to describe who you are and what you do. If you're a business, talk
+          about how you started and tell the story of your professional journey.
+          People want to know the real you, so don't be afraid to share personal
+          anecdotes. Explain your core values and how you, your organization, or
+          your business stand out from the crowd.
+        </p>
+        <a href="./contacto" class="btn btn-warning text-uppercase">
+          Contact us</a
+        >
       </div>
-      <div class="col-md-6 text-dark d-flex justify-content-center">
-          <div class="container-card-phrases">                
-              <h3 class="text-uppercase">About Us</h3>
-              <p>
-                  This is your About section. It’s a great space to tell your story and to describe who you are and what you do. If you're a business, talk about how you started and tell the story of your professional journey. People want to know the real you, so don't be afraid to share personal anecdotes. Explain your core values and how you, your organization, or your business stand out from the crowd.
-              </p>
-              <a href="./contacto" class="btn btn-warning text-uppercase"> Contact us</a>
-          </div>
-      </div>
+    </div>
   </div>
 
   <div class="row align-items-center py-3">
-      <div class="col-md-6 pb-3">
-          <img src="https://www.thekaratecoder.com/wp-content/uploads/2020/02/hard-soft-styles.jpeg" width="100%" alt="">
+    <div class="col-md-6 pb-3">
+      <img
+        src="https://www.thekaratecoder.com/wp-content/uploads/2020/02/hard-soft-styles.jpeg"
+        width="100%"
+        alt=""
+      />
+    </div>
+    <div class="col-md-6 text-dark d-flex justify-content-center">
+      <div class="container-card-phrases">
+        <h3 class="text-uppercase">KICK WITH STYLE</h3>
+        <p>
+          KICK WITH STYLE I'm a paragraph. Click here to add your own text and
+          edit me. It’s easy. Just click “Edit Text” or double click me to add
+          your own content and make changes to the font. I’m a great place for
+          you to tell a story and let your users know a little more about you.
+        </p>
+        <a href="./" class="btn btn-warning text-uppercase"> What's new</a>
       </div>
-      <div class="col-md-6 text-dark d-flex justify-content-center">
-          <div class="container-card-phrases">                
-              <h3 class="text-uppercase">KICK WITH STYLE</h3>
-              <p>
-                  KICK WITH STYLE
-                  I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font. I’m a great place for you to tell a story and let your users know a little more about you.
-              </p>
-              <a href="./" class="btn btn-warning text-uppercase"> What's new</a>
-          </div>
-      </div>
+    </div>
   </div>
-
 </div>
 
 <!-- notas: 
@@ -248,7 +312,5 @@ footer: las redes sociañes ----
 nota: el logo de wassap se repite en todas las paginas....
 
 -->
-
-
 
 {% endblock %}

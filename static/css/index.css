@@ -80,6 +80,10 @@ body{
     justify-content: center;    
 }
 
+.p-rel{
+  position: relative;
+}
+
 .azul-marino-bg{
   background-color: #161827;
 }
@@ -161,4 +165,27 @@ body{
   .container-card-phrases{
     width: 55%;
   }
+}
+
+/* estilos para card img de index de porque entrenar con nosotros */
+
+.img-card-wh46{
+  width: 46px;
+}
+
+
+/* estilo para el hero del index */
+
+.hero{
+  padding: 18rem;
+  background-image: url(../img/Dojo_actualidad.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: brightness(50%);
+}
+
+.hero-info{
+  position: absolute; 
+  top: 15%; 
+  padding: 0 4rem;
 }
