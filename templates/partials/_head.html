@@ -11,31 +11,61 @@
   
   <!--Responsive Meta Tag-->
 
-  <link rel="manifest" href="{{url_for('static', filename = 'manifest.json')}}">
+  <!-- <link rel="manifest" href="{{url_for('static', filename = 'manifest.json')}}"> -->
   <!-- chorme firefox OS y opera -->
-  <meta name='theme-color' content='#009879' />
+  <!-- <meta name='theme-color' content='#009879' /> -->
   <!-- windows phone -->
-  <meta name='msapplication-navbutton-color' content='#009879' />
+  <!-- <meta name='msapplication-navbutton-color' content='#009879' /> -->
   <!-- color e icono IOS -->
-  <link rel="shortcut icon" href="{{url_for('static', filename = './img/general/otros/tree.webp')}}" type="image/x-icon">
-  <link rel="apple-touch-icon" href="{{url_for('static', filename = 'img/general/flooded-house.png')}}">
+  <!-- <link rel="shortcut icon" href="{{url_for('static', filename = './img/general/otros/tree.webp')}}" type="image/x-icon"> -->
+  <!-- <link rel="apple-touch-icon" href="{{url_for('static', filename = 'img/general/flooded-house.png')}}"> -->
   
-  <meta name='apple-mobile-web-app-title' content='descripción' />
+  <!-- <meta name='apple-mobile-web-app-title' content='descripción' /> -->
   <!-- safary ios -->
-  <meta name='apple-mobile-web-app-capable' content='no' />
-  <meta name='apple-mobile-web-app-status-bar-style' content='black-translucent' />
+  <!-- <meta name='apple-mobile-web-app-capable' content='no' /> -->
+  <!-- <meta name='apple-mobile-web-app-status-bar-style' content='black-translucent' /> -->
   
   <!--Import Google Icon Font-->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
+  <link rel="shortcut icon" href="{{url_for('static', filename = './img/logos/favicon.ico')}}" type="image/x-icon">
   <!-- estilo principal de la web -->
   <link rel="preload" href="{{url_for('static', filename = './css/bootstrap.min.css')}}" as="style">
   <link rel="stylesheet" href="{{url_for('static', filename = './css/bootstrap.min.css')}}">
-
+  
+  <!-- style-main-page -->
   <link rel="preload" href="{{url_for('static', filename = './css/index.css')}}" as="style">
   <link rel="stylesheet" href="{{url_for('static', filename = './css/index.css')}}">
+  <!-- estilos del carrousel piola -->
+  <link rel="preload" href="{{url_for('static', filename = './css/carrouselpiola.css')}}" as="style">
+  <link rel="stylesheet" href="{{url_for('static', filename = './css/carrouselpiola.css')}}">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"/> 
 
-  <!-- galeria de imagenes -->
-  <link rel="stylesheet" href="{{url_for('static', filename = './css/lightgallery-bundle.min.css')}}">
+  <!-- botones-css -->
+  <link rel="preload" href="{{url_for('static', filename = './css/navbar.css')}}" as="style">
+  <link rel="stylesheet" href="{{url_for('static', filename = './css/navbar.css')}}">
+
+  <!-- socios-css -->
+  <link rel="preload" href="{{url_for('static', filename = './css/socios.css')}}" as="style">
+  <link rel="stylesheet" href="{{url_for('static', filename = './css/socios.css')}}">
+
+  <!-- style-footer -->
+  <link rel="preload" href="{{url_for('static', filename = './css/footer.css')}}" as="style">
+  <link rel="stylesheet" href="{{url_for('static', filename = './css/footer.css')}}">
+  
+  <!-- botones-css -->
+  <link rel="preload" href="{{url_for('static', filename = './css/buttons.css')}}" as="style">
+  <link rel="stylesheet" href="{{url_for('static', filename = './css/buttons.css')}}">
+
+  <!-- style-contact -->
+  <link rel="preload" href="{{url_for('static', filename = './css/contacto.css')}}" as="style">
+  <link rel="stylesheet" href="{{url_for('static', filename = './css/contacto.css')}}">
+
+  <link rel="preload" href="{{url_for('static', filename = './css/cards.css')}}" as="style">
+  <link rel="stylesheet" href="{{url_for('static', filename = './css/cards.css')}}">
+
+  <!-- leaflet css -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.8.0/dist/leaflet.css" integrity="sha512-hoalWLoI8r4UszCkZ5kL8vayOGVae1oxXe/2A4AO6J9+580uKHDO3JdHb7NzwwzK5xr/Fs0W40kiNHxM9vyTtQ==" crossorigin="">
+  
   <title>Taekondo La Plata</title>
 </head>

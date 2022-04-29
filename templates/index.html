@@ -1,16 +1,254 @@
-{% extends 'partials/_layout.html' %}
-{% block body %}
-    <!-- Info del index-->
-    <main>
-        <div>
-            {% include ('quienesSomos.html') %}  
-            {% include ('sedesHorarios.html') %}  
-            {% include ('membership.html') %}  
-            {% include ('contacto.html') %}  
+{% extends 'partials/_layout.html' %} {% block body %}
+<!-- Info del index-->
+
+<div class="container text-dark">
+  <h2>Asociación de tae kwon do y hapkido de La Plata</h2>
+  <p>
+    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laudantium
+    explicabo exercitationem placeat quasi, facere pariatur nam accusantium
+    omnis suscipit voluptatem, laborum fuga eligendi quos laboriosam cum eos ab.
+    Doloremque, repellat.
+  </p>
+  <!-- 1- imagen grande -->
+  <div class="mb-4">
+    <img
+      class="card-img-right flex-auto d-none d-md-block"
+      src="{{url_for('static', filename = './img/lugar.jpg')}}"
+      alt="Thumbnail [200x250]"
+      data-holder-rendered="true"
+      style="width: 100%; height: 100%"
+    />
+  </div>
+</div>
+<!-- otro carrousel menos piola -->
+<div id="jquery-script-menu">
+  <div class="jquery-script-center">
+    <div class="jquery-script-ads">
+      <script
+        async
+        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2783044520727903"
+        crossorigin="anonymous"
+      ></script>
+      <!-- jQuery_demo -->
+      <ins
+        class="adsbygoogle"
+        style="display: inline-block; width: 728px; height: 90px"
+        data-ad-client="ca-pub-2783044520727903"
+        data-ad-slot="2780937993"
+      ></ins>
+      <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+      </script>
+    </div>
+    <div class="jquery-script-clear"></div>
+  </div>
+</div>
+
+<div
+  class="container text-dark"
+  id="featureContainer"
+  style="margin: 150px auto"
+>
+  <div class="row mx-auto my-2 justify-content-center">
+    <div id="featureCarousel" class="carousel slide" data-bs-ride="carousel">
+      <h1 class="font-weight-light float-start">Noticias</h1>
+      <!-- controles -->
+      <div class="float-end pe-md-4">
+        <a
+          class="indicator"
+          href="#featureCarousel"
+          role="button"
+          data-bs-slide="prev"
+        >
+          <span class="fas fa-chevron-left" aria-hidden="true"></span>
+        </a>
+        &nbsp;&nbsp;
+        <a
+          class="w-aut indicator"
+          href="#featureCarousel"
+          role="button"
+          data-bs-slide="next"
+        >
+          <span class="fas fa-chevron-right" aria-hidden="true"></span>
+        </a>
+      </div>
+      <div class="carousel-inner" role="listbox">
+        <div class="carousel-item active">
+          <div class="col-md-4">
+            <div class="card">
+              <div class="card-img">
+                <img
+                  src="https://source.unsplash.com/JTkibpa_Xv4/450x650"
+                  class="img-fluid"
+                />
+              </div>
+              <div class="card-img-overlays">Slide 1</div>
+            </div>
+          </div>
         </div>
+        {% for img in noti %}
+        <div class="carousel-item">
+          <div class="col-md-4">
+            <div class="card">
+              <div class="card-img">
+                <img src="{{img.url}}" class="img-fluid" />
+              </div>
+              <div class="card-img-overlays">{{img.title}}</div>
+            </div>
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</div>
 
-    </main>
-    
-<!-- FIN Info del index -->
+<script
+  src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
+  integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI="
+  crossorigin="anonymous"></script>
+<script>
+  let items = document.querySelectorAll(
+    "#featureContainer .carousel .carousel-item"
+  );
+  items.forEach((el) => {
+    const minPerSlide = 3;
+    let next = el.nextElementSibling;
+    for (var i = 1; i < minPerSlide; i++) {
+      if (!next) {
+        // wrap carousel by using first child
+        next = items[0];
+      }
+      let cloneChild = next.cloneNode(true);
+      el.appendChild(cloneChild.children[0]);
+      next = next.nextElementSibling;
+    }
+  });
+  $(document).ready(function () {
+    $("#featureCarousel").carousel({ interval: false });
+    $("#featureCarousel").carousel("pause");
+  });
+</script>
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(["_setAccount", "UA-36251023-1"]);
+  _gaq.push(["_setDomainName", "jqueryscript.net"]);
+  _gaq.push(["_trackPageview"]);
+
+  (function () {
+    var ga = document.createElement("script");
+    ga.type = "text/javascript";
+    ga.async = true;
+    ga.src =
+      ("https:" == document.location.protocol ? "https://ssl" : "http://www") +
+      ".google-analytics.com/ga.js";
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+<script>
+  try {
+    fetch(
+      new Request(
+        "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js",
+        { method: "HEAD", mode: "no-cors" }
+      )
+    )
+      .then(function (response) {
+        return true;
+      })
+      .catch(function (e) {
+        var carbonScript = document.createElement("script");
+        carbonScript.src =
+          "//cdn.carbonads.com/carbon.js?serve=CK7DKKQU&placement=wwwjqueryscriptnet";
+        carbonScript.id = "_carbonads_js";
+        document.getElementById("carbon-block").appendChild(carbonScript);
+      });
+  } catch (error) {
+    console.log(error);
+  }
+</script>
+
+<!-- porque entrenar con nosotros -->
+<div class="bg-p-dark txt-color-sl my-0">
+  <hr />
+  <h1 class="text-center m-5">Porque entrenar con nosotros</h1>
+  <p class="m-5">
+    Lorem, ipsum dolor sit amet consectetur adipisicing elit. In, doloremque
+    autem rerum ut dolore soluta reiciendis vero ab mollitia minus. Voluptas
+    ipsa ullam iusto sint necessitatibus. Numquam recusandae aliquam vero!
+  </p>
+</div>
+<!-- beneficios -->
+
+<div class="container bg-p-light">
+  <h1 class="text-center">Beneficios</h1>
+  <div class="row mb-4">
+    {% for b in bene %}
+
+    <div class="col-md-6 mb-4">
+      <div class="card text-center bg-rosa text-black">
+        <div class="card-body">
+          <div class="mb-4">
+            <img src="{{b.icono}}" alt="icono" />
+          </div>
+          <h5 class="card-title">{{b.title}}</h5>
+          <div class="mb-4">
+            <p class="card-text">{{b.text}}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    {% if loop.index % 4 == 0 %}
+  </div>
+  <div class="row mb-4">{% endif %} {% endfor %}</div>
+</div>
+
+<div class="section_phrases">
+  <div class="row flex-row-reverse align-items-center py-3">
+      <div class="col-md-6 pb-3">
+        <img src="https://www.taekwondonation.com/wp-content/uploads/2020/04/stretchingkick.jpg" width="100%" alt="">
+      </div>
+      <div class="col-md-6 text-dark d-flex justify-content-center">
+          <div class="container-card-phrases">                
+              <h3 class="text-uppercase">About Us</h3>
+              <p>
+                  This is your About section. It’s a great space to tell your story and to describe who you are and what you do. If you're a business, talk about how you started and tell the story of your professional journey. People want to know the real you, so don't be afraid to share personal anecdotes. Explain your core values and how you, your organization, or your business stand out from the crowd.
+              </p>
+              <a href="./contacto" class="btn btn-warning text-uppercase"> Contact us</a>
+          </div>
+      </div>
+  </div>
+
+  <div class="row align-items-center py-3">
+      <div class="col-md-6 pb-3">
+          <img src="https://www.thekaratecoder.com/wp-content/uploads/2020/02/hard-soft-styles.jpeg" width="100%" alt="">
+      </div>
+      <div class="col-md-6 text-dark d-flex justify-content-center">
+          <div class="container-card-phrases">                
+              <h3 class="text-uppercase">KICK WITH STYLE</h3>
+              <p>
+                  KICK WITH STYLE
+                  I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font. I’m a great place for you to tell a story and let your users know a little more about you.
+              </p>
+              <a href="./" class="btn btn-warning text-uppercase"> What's new</a>
+          </div>
+      </div>
+  </div>
+
+</div>
+
+<!-- notas: 
+index
+despues de beneficios:
+1- porque entrenar con nosotros: texto y fin para el index.
+
+footer: las redes sociañes ---- 
+nota: el logo de wassap se repite en todas las paginas....
+
+-->
+
+
+
 {% endblock %}
-

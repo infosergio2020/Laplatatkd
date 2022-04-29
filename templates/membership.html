@@ -1,17 +1,97 @@
+{% extends 'partials/_layout.html' %}
+{% block body %}
 <div id="membre" class="container-md">
-    <div class="abs-center">
-        <h1>Membresía</h1>
+    <div class="abs-center text-dark">
+        <h1>Beneficios de pertener a nuestra asociación </h1>
     </div>
-
-    <h2>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</h2>
-    <p>
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laudantium explicabo exercitationem placeat quasi, facere pariatur nam accusantium omnis suscipit voluptatem, laborum fuga eligendi quos laboriosam cum eos ab. Doloremque, repellat.
-    </p>
-    <div class="mx-auto abs-center">
-        <img src="{{url_for('static', filename = './img/logo640.webp')}}" width="110px" height="110px" alt="logo de taekondo">
-        <img src="{{url_for('static', filename = './img/logo640.webp')}}" width="110px" height="110px" alt="logo de taekondo">
     
-        <img src="{{url_for('static', filename = './img/logo640.webp')}}" width="110px" height="110px" alt="logo de taekondo">
-    
+    <div class="container">
+       
+      <!-- los 4 cards -->
+        <div class="flex-socios-card card-deck mb-3 text-center">
+            <!-- primer card -->
+            <div class="card mx-5 mb-4 box-shadow sombra">
+                <div class="card-header" style="background-color: var(--secondary);">
+                  <h4 class="my-0 font-weight-normal text-dark">Silver Membership</h4>
+                </div>
+                <div class="card-body">
+                  <h1 class="card-title pricing-card-title text-dark">$15 <small class="text-muted">/ mo</small></h1>
+                  <ul class="list-unstyled mt-3 mb-4 text-dark">
+                    <li>20 users included</li>
+                    <li>10 GB of storage</li>
+                    <li>Priority email support</li>
+                    <li>Help center access</li>
+                  </ul>
+                  </div>
+                <div class="card-header" >
+                  <h4 class="my-0 font-weight-normal text-dark">
+                    <ul class="list-unstyled mt-3 mb-4 text-dark">
+                      <li>Silver Membership</li>
+                      <li>Fitness assessment</li>
+                      <li>Locker room with showers</li>
+                      
+                    </ul>
+                    
+ 
+                  </h4>
+                </div>
+            </div>
+            <!-- segundo card -->
+            <div class="card mx-5 mb-4  sombra">
+                <div class="card-header"  style="background-color: var(--secondary);">
+                  <h4 class="my-0 font-weight-normal text-dark">Pro</h4>
+                </div>
+                <div class="card-body"  style="background-color: #595859;">
+                  <h1 class="card-title pricing-card-title text-light">$15 <small class="text-muted text-light">/ mo</small></h1>
+                  <ul class="list-unstyled mt-3 mb-4 text-light">
+                    <li>20 users included</li>
+                    <li>10 GB of storage</li>
+                    <li>Priority email support</li>
+                    <li>Help center access</li>
+                  </ul>
+                  </div>
+                <div class="card-header" >
+                  <h4 class="my-0 font-weight-normal text-dark">
+                    <ul class="list-unstyled mt-3 mb-4 text-dark">
+                      <li>Silver Membership</li>
+                      <li>Fitness assessment</li>
+                      <li>Locker room with showers</li>
+                      
+                    </ul>
+                    
+ 
+                  </h4>
+                </div>
+            </div>
+            <!-- tercer card -->
+            <div class="card mx-5 mb-4 box-shadow sombra">
+                <div class="card-header" style="background-color: var(--secondary);">
+                  <h4 class="my-0 font-weight-normal text-dark">Pro</h4>
+                </div>
+                <div class="card-body">
+                  <h1 class="card-title pricing-card-title text-dark">$15 <small class="text-muted">/ mo</small></h1>
+                  <ul class="list-unstyled mt-3 mb-4 text-dark">
+                    <li>20 users included</li>
+                    <li>10 GB of storage</li>
+                    <li>Priority email support</li>
+                    <li>Help center access</li>
+                  </ul>
+                  </div>
+                <div class="card-header">
+                  <h4 class="my-0 font-weight-normal text-dark">
+                    <ul class="list-unstyled mt-3 mb-4 text-dark">
+                      <li>Silver Membership</li>
+                      <li>Fitness assessment</li>
+                      <li>Locker room with showers</li>
+                      
+                    </ul>
+                    
+ 
+                  </h4>
+                </div>
+            </div>
+        </div>
     </div>
+    
 </div>
+{% endblock %}
