@@ -24,23 +24,23 @@ beneficios = [
 noticias = [
     {
         "title":"Slide 2",
-        "url":"https://source.unsplash.com/m-eNBfYYrbA/450x650"
+        "url":"https://resizer.glanacion.com/resizer/v8KQweE_tO4Jy2oKHtkNVfN51TM=/375x250/smart/filters:format(webp):quality(80)/cloudfront-us-east-1.images.arcpublishing.com/lanacionar/5ZRYP2RNAVFF3EFCBHCM3HTVIA.jpg"
     },
     {
         "title":"Slide 3",
-        "url":"https://source.unsplash.com/W2XfQIptWYs/450x650"
+        "url":"https://resizer.glanacion.com/resizer/C66tPlc7yJAtgMK03ceHh8swtrk=/375x250/smart/filters:format(webp):quality(80)/cloudfront-us-east-1.images.arcpublishing.com/lanacionar/PHFSTVCPQ5CZXA6HSIMYEG57J4.jpg"
     },
     {
         "title":"Slide 4",
-        "url":"https://source.unsplash.com/txX3cXgiAzU/450x650"
+        "url":"https://resizer.glanacion.com/resizer/f4MXM14jZ53uBgia9GrfG3h1b5Q=/375x250/smart/filters:format(webp):quality(80)/cloudfront-us-east-1.images.arcpublishing.com/lanacionar/7NF2PMBYJJHYRF6YX3WDFC2EGY.jpg"
     },
     {
         "title":"Slide 5",
-        "url":"https://source.unsplash.com/2zjKnJsT7D0/450x650"
+        "url":"https://resizer.glanacion.com/resizer/mXFNApJdf0F3yFPoLRaSf3K9qPQ=/375x250/smart/filters:format(webp):quality(80)/cloudfront-us-east-1.images.arcpublishing.com/lanacionar/6STQX4OB5FEM5CP6SUSZZBTKHE.jpg"
     },
     {
         "title":"Slide 6",
-        "url":"https://source.unsplash.com/AvnXTPOPVHY/450x650"
+        "url":"https://source.unsplash.com/DE2VQvh2_H8/450x650"
     },
 
 ]
@@ -75,11 +75,23 @@ contacto={
     },
 }
 
-sedesHorarios={
+sedesHorarios=[{
     "dato":{ 
-
+            "Academia kukkiwon",
     },
-}
+    "dato":{ 
+            "Cit",
+    },
+    "dato":{ 
+            "Club astilleros",
+    },
+    "dato":{ 
+            "Comedor",
+    },
+    "dato":{ 
+            "Corazones del retiro",
+    },
+}]
 
 botones_navbar = [
     {
