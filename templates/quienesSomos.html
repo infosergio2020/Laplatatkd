@@ -1,43 +1,13 @@
 {% extends 'partials/_layout.html' %}
 {% block body %}
 <div class="bg-img-yellow">
-  <div id="quien" class="container-md text-dark">
-      <h1 class="text-center">¿Quiénes somos?</h1>
-      <h2 class="text-center">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</h2>
 
-      <div class="row my-4">
-        <div class="col-md-7 border border-dark d-flex align-items-center justify-content-center" style="background-color: #D97D94;">
-          <img style="width: 100%;" src="{{url_for('static', filename = './img/plantel_1.jpg')}}" alt="">
-        </div>
-        <div class="col-md-5 border border-dark p-5">
-          
-            <div class="text-center">
-              <h3 class="fs-1 fw-bold">WE ARE WORKIT!</h3>
-              <hr>
-            </div>
-            <h3 class="fs-6 text fw-bold">AN ONLINE DANCE SCHOOL FOR ALL LEVELS</h3>
-  
-            <p>
-              I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font. Feel free to drag and drop me anywhere you like on your page. I’m a great place for you to tell a story and let your users know a little more about you.
-            </p>
-  
-            <p>
-              This is a great space to write a long text about your company and your services. You can use this space to go into a little more detail about your company.
-            </p>
-          
-        </div>
-      </div>
-
-      <h1 class="text-center">Conoce al equipo</h1>
-      <h2 class="text-center">I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font. I’m a great place for you to tell a story and let your users know a little more about you.</h2>
-
-  </div>
 
   <div class="section_phrases">
     <div class="row flex-row-reverse align-items-center py-3">
       <div class="col-md-6 pb-3">
         <img
-          src="https://www.taekwondonation.com/wp-content/uploads/2020/04/stretchingkick.jpg"
+          src="{{url_for('static', filename = './img/plantel_1.jpg')}}"
           width="100%"
           alt=""
         />
