@@ -110,6 +110,7 @@ botones_navbar = [
         "title":"Contacto",
         "url":"/contacto",
     },
+    
 
 ]
 

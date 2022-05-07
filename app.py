@@ -78,3 +78,7 @@ def SedesHorarios():
 @app.route('/test')
 def Test():
     return rutas.render_template_test()
+
+@app.route('/mensajeEnviado')
+def MensajeEnviado():
+    return rutas.render_template_mensajeEnviado()

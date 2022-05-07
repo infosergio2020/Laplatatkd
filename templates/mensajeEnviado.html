@@ -1,0 +1,20 @@
+{% extends 'partials/_layoutMensaje.html' %}
+{% block body %}
+
+<!-- Info del mensajeEnviado-->
+<div class="fondo-enviado d-flex justify-content-center align-items-center">
+        <div class="container row justify-content-center" >
+            <div class="card bg-p-dark conten-card">
+                <div class="card-body">
+                <h5 class="card-title text-center">Su mensaje ha sido enviado con exito.</h5>
+                <h6 class="card-subtitle mb-2 text-muted text-center">¡Gracias por escribirnos!</h6>
+                <p class="card-text text-center">Pronto le estaremos contestando.</p>
+                <p class="card-text text-center">Mientras tanto será reenviado a la página de Contacto.</p>
+                </div>
+            </div>
+        </div>
+</div>
+<script>
+    setTimeout("location.href='contacto'",5000)
+</script>
+{% endblock %}

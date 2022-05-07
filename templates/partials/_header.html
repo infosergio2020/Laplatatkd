@@ -18,17 +18,17 @@
             {% endif %}  
               {% if link.title == "Sedes y horarios" %}
               <li class="nav-item dropdown m-2">
-                <a class="nav-link btn btn-link-sl dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <a class="nav-link btn btn-link-sl dropdown-toggle" href={{link.url}} id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                   {{link.title}}
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="#">Academia kukkiwon</a></li>
-                  <li><a class="dropdown-item" href="#">Cit</a></li>
+                  <li><a class="dropdown-item" href="/sedesHorarios">Academia kukkiwon</a></li>
+                  <li><a class="dropdown-item" href="/sedesHorarios">Cit</a></li>
                   <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="#">Club astilleros</a></li>
+                  <li><a class="dropdown-item" href="/sedesHorarios">Club astilleros</a></li>
                   
-                  <li><a class="dropdown-item" href="#">Comedor</a></li>
-                  <li><a class="dropdown-item" href="#">Corazones del retiro</a></li>
+                  <li><a class="dropdown-item" href="/sedesHorarios">Comedor</a></li>
+                  <li><a class="dropdown-item" href="/sedesHorarios">Corazones del retiro</a></li>
                 </ul>
               </li>
               {% endif %}  

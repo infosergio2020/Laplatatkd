@@ -22,3 +22,6 @@ class CustomRouter:
    
     def render_template_test(self):
         return render_template('test.html')
+
+    def render_template_mensajeEnviado(self):
+        return render_template('mensajeEnviado.html')
