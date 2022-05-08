@@ -193,23 +193,16 @@ h1,h2,h3,h4,h5{
 
 /* estilo para el hero del index */
 
-.hero{
-  padding: 18rem;
-  background-image: url(../img/portada/portada.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  filter: brightness(50%);
-}
-
 .hero-info{
-  position: absolute; 
-  top: 15%; 
-  left: -375px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  
   padding: 0 4rem;
-  background-color: #000000a1;
-  height: 60vh;
-  width: 100vw;
-
+  background: rgb(0,0,0);
+  background: linear-gradient(0deg, rgba(0,0,0,0.5998774509803921) 20%, rgba(246,251,36,0) 35%, rgba(171,175,25,0) 71%, rgba(0,0,0,0.6362920168067228) 84%);
+  width: 100%;
+  height: 100%;
 }
 .margin-bene{
   margin-top: 10rem;

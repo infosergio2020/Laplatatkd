@@ -1,21 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="preload" href="{{url_for('static', filename = './css/bootstrap.min.css')}}" as="style">
-    <link rel="stylesheet" href="{{url_for('static', filename = './css/bootstrap.min.css')}}">
+    <link
+      rel="preload"
+      href="{{url_for('static', filename = './css/bootstrap.min.css')}}"
+      as="style"
+    />
+    <link
+      rel="stylesheet"
+      href="{{url_for('static', filename = './css/bootstrap.min.css')}}"
+    />
 
-    <link rel="preload" href="{{url_for('static', filename = './css/index.css')}}" as="style">
-    <link rel="stylesheet" href="{{url_for('static', filename = './css/index.css')}}">
+    <link
+      rel="preload"
+      href="{{url_for('static', filename = './css/main.css')}}"
+      as="style"
+    />
+    <link
+      rel="stylesheet"
+      href="{{url_for('static', filename = './css/main.css')}}"
+    />
 
     <title>TestSections</title>
-</head>
-<body>
+  </head>
 
+  <body>
+    <div>
+      <h1 class="text-center my-5">Porque entrenar con nosotros</h1>
 
-    
-</body>
+      <div class="row m-0 p-4 text-dark">
+        <div class="col-md-4 d-flex justify-content-center mb-4">
+          <div class="card" style="width: 18rem">
+            <div class="card-header bg-rosa">
+              <div
+                class="d-flex justify-content-center align-items-center py-2"
+              >
+                <img
+                  class="card-img-top img-card-wh46"
+                  src="{{url_for('static', filename = './img/health.png')}}"
+                  alt="Card image cap"
+                />
+
+                <p class="mx-2 m-0">El sistema</p>
+              </div>
+            </div>
+            <div class="card-body text-dark">
+              <p class="card-text">
+                Nuestro objetivo es crear un programa de entrenamiento que
+                erradique los desequilibrios o deficiencias físicas del cliente
+                y mejore todos sus parámetros físicos mediante una actividad
+                física controlada y supervisada por profesionales altamente
+                cualificados.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 d-flex justify-content-center mb-4">
+          <div class="card" style="width: 18rem">
+            <div class="card-header bg-rosa">
+              <div
+                class="d-flex justify-content-center align-items-center py-2"
+              >
+                <img
+                  class="card-img-top img-card-wh46"
+                  src="{{url_for('static', filename = './img/trophy_3.png')}}"
+                  alt="Card image cap"
+                />
+
+                <p class="mx-2 m-0">Experiencia</p>
+              </div>
+            </div>
+            <div class="card-body text-dark">
+              <p class="card-text">
+                Más de 10 años de experiencia en el sector y un equipo de
+                profesionales continuamente actualizados y con amplia
+                experiencia propia en el mundo del taekwondo. Resultados,
+                formación continua, preparación, experiencia y especialización
+                son los pilares desde los cuales construimos nuestra comunidad.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 d-flex justify-content-center mb-4">
+          <div class="card" style="width: 18rem">
+            <div class="card-header bg-rosa">
+              <div
+                class="d-flex justify-content-center align-items-center py-2"
+              >
+                <img
+                  class="card-img-top img-card-wh46"
+                  src="{{url_for('static', filename = './img/united.png')}}"
+                  alt="Card image cap"
+                />
+
+                <p class="mx-2 m-0">El equipo</p>
+              </div>
+            </div>
+
+            <div class="card-body text-dark">
+              <p class="card-text">
+                La formación y preparación de nuestros maestros, está avalada
+                por algunos de las más prestigiosas organizaciones y maestros
+                internacionales (a,b,c,d,f, etc.). Nuestro equipo está en
+                constante formación continua con los mejores docentes del
+                momento, aplicamos las últimas tendencias en métodos y técnicas
+                de entrenamiento.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>

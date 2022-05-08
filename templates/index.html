@@ -1,20 +1,20 @@
 {% extends 'partials/_layout.html' %} {% block body %}
 <!-- Info del index-->
 <section class="parrallax" id="seccion1">
-<div class="container p-rel">
-  <!-- <div class="hero"></div> -->
-  <div class="hero-info">
-      <h2 class="fs-1 marginportada text-center text-light">Asociación de tae kwon do y hapkido de La Plata</h2>
-      <hr>
+  <div class="hero-info p-2">
+      <h2 class="fs-1 text-center text-light">
+        Asociación de tae kwon do y hapkido de La Plata
+      </h2>
+
       <p class="text-light">
         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laudantium
-        explicabo exercitationem placeat quasi, facere pariatur nam accusantium
-        omnis suscipit voluptatem, laborum fuga eligendi quos laboriosam cum eos ab.
-        Doloremque, repellat.
+        explicabo exercitationem placeat quasi, facere pariatur nam
+        accusantium omnis suscipit voluptatem, laborum fuga eligendi quos
+        laboriosam cum eos ab. Doloremque, repellat.
       </p>
   </div>
-</div>
 </section>
+
 <!-- ejemplo de parralax -->
 <!-- 
 <section class="parrallax" id="seccion1">
@@ -184,7 +184,7 @@
 
 <!-- porque entrenar con nosotros -->
 
-<section class="parrallax bg-p-dark txt-color-sl m-0 p-0" id="seccion3">
+<section class="parrallax bg-p-dark txt-color-sl m-0 p-0" id="seccion3" style="height: 65%;">
 <div>
   <h1 class="text-center my-5">Porque entrenar con nosotros</h1>
 
@@ -194,7 +194,6 @@
         <div class="card-header bg-rosa">
           <div class="d-flex justify-content-center align-items-center py-2">
               <img class="card-img-top img-card-wh46" src="{{url_for('static', filename = './img/health.png')}}" alt="Card image cap" />
-
               <p class="mx-2 m-0">El sistema</p>
           </div>
         </div>
