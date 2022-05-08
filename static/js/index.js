@@ -6,6 +6,10 @@ window.addEventListener('DOMContentLoaded', (event) => {
     createParallax(image);
     
     initMap();
+    initMap();
+    initMap();
+    initMap();
+    initMap();
 });
 
 // funcion encargada de aplicar estilos para esconder el navbar cuando se hace scrollY (nav--hidden)

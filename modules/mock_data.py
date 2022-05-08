@@ -21,6 +21,60 @@ beneficios = [
     },
 ]
 
+ubicaciones= [
+    {
+        "title":"kukkiwon",
+         "lat":"51.505", 
+         "long":"-0.09",
+    },
+    {
+        "title":"Cit",
+        "lat":"51.505", 
+        "long":"-0.09",
+    },
+    {
+        "title":"astilleros",
+        "lat":"51.505", 
+        "long":"-0.09",    
+    },
+    {
+        "title":"Comedor",
+        "lat":"51.505", 
+        "long":"-0.09",    
+    },
+    {
+        "title":"retiro",
+        "lat":"51.505", 
+        "long":"-0.09",    
+    },
+
+]
+
+
+imgFace= [
+    {
+        "title":"Slide 2",
+        "url":"https://scontent.faep9-1.fna.fbcdn.net/v/t1.6435-9/62046384_2236805293077588_2549016270737506304_n.jpg?_nc_cat=103&ccb=1-5&_nc_sid=8bfeb9&_nc_eui2=AeEbIE1xJP_FVVMqF7aHAkUXRy4_q8sfxOJHLj-ryx_E4jrT9MtcrwVlKt5S9j1wjo0&_nc_ohc=eAWWSPkrRggAX8g_uhb&_nc_ht=scontent.faep9-1.fna&oh=00_AT9sKPccXfsOb_p55xeUwFJHzMY8HCogeKWrc3UgDvhpOA&oe=628CDC30"
+    },
+    {
+        "title":"Slide 3",
+        "url":"https://scontent.faep9-2.fna.fbcdn.net/v/t1.6435-9/59969801_2186181178140000_4565747005279698944_n.jpg?_nc_cat=107&ccb=1-5&_nc_sid=8bfeb9&_nc_eui2=AeEAWQ17UkTxB1StkIVZhswykGJh6ER4xQ2QYmHoRHjFDfffJkLbyDr0QJgtIXhptUg&_nc_ohc=7tEjNz26_qYAX-z0VYS&_nc_ht=scontent.faep9-2.fna&oh=00_AT_EQ_gRHsmK60bMQr7RHkw5aT4H2DHVjFLy5vp8E746Iw&oe=628CDCA3"
+    },
+    {
+        "title":"Slide 4",
+        "url":"https://scontent.faep9-3.fna.fbcdn.net/v/t1.6435-9/71004697_2421325441292238_1758348847794356224_n.jpg?_nc_cat=108&ccb=1-5&_nc_sid=8bfeb9&_nc_eui2=AeHXb5Bnhb12wKLuzuqz7tPgHgwHFOcTkHMeDAcU5xOQc8ZdLdt9qy2v_B9qXTvQsEw&_nc_ohc=hB6tnojgFeoAX-8moy_&_nc_oc=AQmaqBGUDBOo6NrS5oEIcd6xX43dGUkHeYU_wdZikYg2Glp-1OZxMLasqMx2T2gB8G8&_nc_ht=scontent.faep9-3.fna&oh=00_AT-pVJtSg4CSe2GdWKHf_vXyzTxt6J4NaJKORKzu29EsMQ&oe=628FCF4D"
+    },
+    {
+        "title":"Slide 5",
+        "url":"https://resizer.glanacion.com/resizer/mXFNApJdf0F3yFPoLRaSf3K9qPQ=/375x250/smart/filters:format(webp):quality(80)/cloudfront-us-east-1.images.arcpublishing.com/lanacionar/6STQX4OB5FEM5CP6SUSZZBTKHE.jpg"
+    },
+    {
+        "title":"Slide 6",
+        "url":"https://source.unsplash.com/DE2VQvh2_H8/450x650"
+    },
+
+]
+
 noticias = [
     {
         "title":"Slide 2",

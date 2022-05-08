@@ -85,17 +85,159 @@
     <div class="row text-dark pt-4">
         <h2 class="text-center">Siguenos en instagram</h2>
     </div>
-    <div class="row text-dark pt-4">
-        <div class="col-md-4">
-            <img width="100%" src="https://scontent.faep9-1.fna.fbcdn.net/v/t1.6435-9/62046384_2236805293077588_2549016270737506304_n.jpg?_nc_cat=103&ccb=1-5&_nc_sid=8bfeb9&_nc_eui2=AeEbIE1xJP_FVVMqF7aHAkUXRy4_q8sfxOJHLj-ryx_E4jrT9MtcrwVlKt5S9j1wjo0&_nc_ohc=eAWWSPkrRggAX8g_uhb&_nc_ht=scontent.faep9-1.fna&oh=00_AT9sKPccXfsOb_p55xeUwFJHzMY8HCogeKWrc3UgDvhpOA&oe=628CDC30" alt="">
-        </div>
-        <div class="col-md-4">
-            <img width="100%" src="https://scontent.faep9-2.fna.fbcdn.net/v/t1.6435-9/59969801_2186181178140000_4565747005279698944_n.jpg?_nc_cat=107&ccb=1-5&_nc_sid=8bfeb9&_nc_eui2=AeEAWQ17UkTxB1StkIVZhswykGJh6ER4xQ2QYmHoRHjFDfffJkLbyDr0QJgtIXhptUg&_nc_ohc=7tEjNz26_qYAX-z0VYS&_nc_ht=scontent.faep9-2.fna&oh=00_AT_EQ_gRHsmK60bMQr7RHkw5aT4H2DHVjFLy5vp8E746Iw&oe=628CDCA3" alt="">
-        </div>
-        <div class="col-md-4">
-            <img width="100%" src="https://scontent.faep9-3.fna.fbcdn.net/v/t1.6435-9/71004697_2421325441292238_1758348847794356224_n.jpg?_nc_cat=108&ccb=1-5&_nc_sid=8bfeb9&_nc_eui2=AeHXb5Bnhb12wKLuzuqz7tPgHgwHFOcTkHMeDAcU5xOQc8ZdLdt9qy2v_B9qXTvQsEw&_nc_ohc=hB6tnojgFeoAX-8moy_&_nc_oc=AQmaqBGUDBOo6NrS5oEIcd6xX43dGUkHeYU_wdZikYg2Glp-1OZxMLasqMx2T2gB8G8&_nc_ht=scontent.faep9-3.fna&oh=00_AT-pVJtSg4CSe2GdWKHf_vXyzTxt6J4NaJKORKzu29EsMQ&oe=628FCF4D" alt="">
-        </div>
+    
+
+<!-- otro carrousel menos piola -->
+<div id="jquery-script-menu">
+    <div class="jquery-script-center">
+      <div class="jquery-script-ads">
+        <script
+          async
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2783044520727903"
+          crossorigin="anonymous"
+        ></script>
+        <!-- jQuery_demo -->
+        <ins
+          class="adsbygoogle"
+          style="display: inline-block; width: 728px; height: 90px"
+          data-ad-client="ca-pub-2783044520727903"
+          data-ad-slot="2780937993"
+        ></ins>
+        <script>
+          (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+      </div>
+      <div class="jquery-script-clear"></div>
     </div>
+  </div>
+  
+  <div
+    class="container text-dark"
+    id="featureContainer"
+    style="margin: 150px auto"
+  >
+    <div class="row mx-auto my-2 justify-content-center">
+      <div id="featureCarousel" class="carousel slide" data-bs-ride="carousel">
+        <!-- <h1 class="font-weight-light float-start">Noticias</h1> -->
+        <!-- controles -->
+        <div class="float-end pe-md-4">
+          <a
+            class="indicator border border-dark"
+            href="#featureCarousel"
+            role="button"
+            data-bs-slide="prev"
+          >
+            <span class="fas fa-chevron-left" aria-hidden="true"></span>
+          </a>
+          &nbsp;&nbsp;
+          <a
+            class="w-aut indicator border border-dark"
+            href="#featureCarousel"
+            role="button"
+            data-bs-slide="next"
+          >
+            <span class="fas fa-chevron-right" aria-hidden="true"></span>
+          </a>
+        </div>
+        <div class="carousel-inner" role="listbox">
+          <div class="carousel-item active">
+            <div class="col-md-4">
+              <div class="card">
+                <div class="card-img"  style="background-color:blueviolet">
+                  <img
+                  src="https://resizer.glanacion.com/resizer/zSaRE3EBjv7jwZXGgp5UxIvR6qQ=/375x250/smart/filters:format(webp):quality(80)/cloudfront-us-east-1.images.arcpublishing.com/lanacionar/ATJRLM74CRGKPFV3HOO253U4BE.jpg"
+                    class="img-fluid"
+                  />
+                </div>
+                <div class="card-img-overlays">Slide 1</div>
+              </div>
+            </div>
+          </div>
+          {% for img in facebook %}
+          <div class="carousel-item">
+            <div class="col-md-4">
+              <div class="card">
+                <div class="card-img"  style="background-color:blueviolet">
+                  <img src="{{img.url}}" class="img-fluid" />
+                </div>
+                <div class="card-img-overlays">{{img.title}}</div>
+              </div>
+            </div>
+          </div>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script
+  src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
+  integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI="
+  crossorigin="anonymous"
+></script>
+<script>
+  let items = document.querySelectorAll(
+    "#featureContainer .carousel .carousel-item"
+  );
+  items.forEach((el) => {
+    const minPerSlide = 3;
+    let next = el.nextElementSibling;
+    for (var i = 1; i < minPerSlide; i++) {
+      if (!next) {
+        // wrap carousel by using first child
+        next = items[0];
+      }
+      let cloneChild = next.cloneNode(true);
+      el.appendChild(cloneChild.children[0]);
+      next = next.nextElementSibling;
+    }
+  });
+  $(document).ready(function () {
+    $("#featureCarousel").carousel({ interval: false });
+    $("#featureCarousel").carousel("pause");
+  });
+</script>
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(["_setAccount", "UA-36251023-1"]);
+  _gaq.push(["_setDomainName", "jqueryscript.net"]);
+  _gaq.push(["_trackPageview"]);
+
+  (function () {
+    var ga = document.createElement("script");
+    ga.type = "text/javascript";
+    ga.async = true;
+    ga.src =
+      ("https:" == document.location.protocol ? "https://ssl" : "http://www") +
+      ".google-analytics.com/ga.js";
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+<script>
+  try {
+    fetch(
+      new Request(
+        "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js",
+        { method: "HEAD", mode: "no-cors" }
+      )
+    )
+      .then(function (response) {
+        return true;
+      })
+      .catch(function (e) {
+        var carbonScript = document.createElement("script");
+        carbonScript.src =
+          "//cdn.carbonads.com/carbon.js?serve=CK7DKKQU&placement=wwwjqueryscriptnet";
+        carbonScript.id = "_carbonads_js";
+        document.getElementById("carbon-block").appendChild(carbonScript);
+      });
+  } catch (error) {
+    console.log(error);
+  }
+</script>
+
+
 
 </div>
 {% endblock %}
