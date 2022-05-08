@@ -187,8 +187,12 @@ body{
 .hero-info{
   position: absolute; 
   top: 15%; 
+  left: -375px;
   padding: 0 4rem;
   background-color: #000000a1;
+  height: 80vh;
+  width: 100vw;
+
 }
 
 .marginportada{
