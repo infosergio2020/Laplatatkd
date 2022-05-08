@@ -178,7 +178,7 @@ body{
 
 .hero{
   padding: 18rem;
-  background-image: url(../img/Dojo_actualidad.jpg);
+  background-image: url(../img/portada/portada.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   filter: brightness(50%);
