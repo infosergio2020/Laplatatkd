@@ -150,11 +150,11 @@ h1,h2,h3,h4,h5{
 
 /* efecto para cambiar color cuando se pasa el curso por la tarjeta rosa */
 
-/* .bg-rosa:hover{
+.bg-rosa:hover{
   background-color: #404040;
   color: #E2F263!important;
   transform: scale(1.05);
-} */
+}
 
 
 /* map */
