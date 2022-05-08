@@ -43,6 +43,20 @@
   background-color: var(--primary-light)!important;
 }
 
+.anchuraCard{
+  width: 62rem;
+  height: 10rem;
+}
+.centrar-div{
+  display: flex;
+  justify-content: center;
+}
+.centrar-text{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 .bg-s{
   background-color: var(--secondary);
 }
@@ -212,7 +226,10 @@ h1,h2,h3,h4,h5{
 .marginportada{
   margin-top: 20rem;
 }
-
+// estilos del mapa de las sedes
+.estilo-mapa{
+  height: 450px;
+}
 /* agregando parallax */
 section{
   width: 100%;
@@ -232,9 +249,14 @@ section{
 }
 
 #seccion2{
-  background-image: url('../img/parralax/para2.jpg');
+  background-image: url('../img/parralax/para2.png');
 }
 
 #seccion3{
   background-image: url('../img/parralax/para3.png');
 }
+
+#seccion4{
+  background-image: url('../img/contacto/contacto.jpg');
+}
+
