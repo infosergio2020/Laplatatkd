@@ -1,14 +1,21 @@
 {% extends 'partials/_layout.html' %}
 {% block body %}
-<section class="page-section" id="contact" style="position: relative;">
-    <img id="paralax" src="https://source.unsplash.com/DE2VQvh2_H8/640x426" alt="" width="93%">
+<section class="parrallax" id="seccion4">
+
 </section>
 
-<div id="contac" class="container-md my-2">
+<div id="contac" class="container-md margin-bene">
     <div class="row mt-1 mb-4 text-center">
-        <div class="col-12 mb-5 bg-p-dark">
-            <h1>¿Quiere saber más? ¡Contactanos!</h1>
-            <h3>Escribinos y encontrá tu lugar de práctica más cercano!</h3>
+        <div class="col-12 mb-5">
+          
+           <div class=" centrar-div">
+             <div id="kukkiwon" class="centrar-text bg-p-light py-5 text-center border anchuraCard rounded-pill">
+
+                <h1>¿Querés saber más?<br> ¡Contactanos! </h1>
+                <h3>Escribinos y encontrá tu lugar de práctica más cercano!</h3>
+              </div>
+            </div>
+        
         </div>
         
         <div class="col-6 offset-3 border border-dark text-dark sombra" style="padding: 2rem;">
@@ -85,10 +92,12 @@
     <div class="row text-dark pt-4">
         <h2 class="text-center">Siguenos en instagram</h2>
     </div>
-    
+
+</div>
 
 <!-- otro carrousel menos piola -->
-<div id="jquery-script-menu">
+<section class="parrallax" id="seccion2">
+  <div id="jquery-script-menu">
     <div class="jquery-script-center">
       <div class="jquery-script-ads">
         <script
@@ -110,14 +119,14 @@
       <div class="jquery-script-clear"></div>
     </div>
   </div>
-  
+
   <div
     class="container text-dark"
     id="featureContainer"
     style="margin: 150px auto"
   >
-    <div class="row mx-auto my-2 justify-content-center">
-      <div id="featureCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="row mx-auto my-2 ">
+      <div id="featureCarousel" class="carousel slide centrar-text" data-bs-ride="carousel">
         <!-- <h1 class="font-weight-light float-start">Noticias</h1> -->
         <!-- controles -->
         <div class="float-end pe-md-4">
@@ -169,75 +178,73 @@
       </div>
     </div>
   </div>
-
-  <script
-  src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
-  integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI="
-  crossorigin="anonymous"
+</section>
+<!-- script del carrousel -->
+<script
+src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
+integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI="
+crossorigin="anonymous"
 ></script>
 <script>
-  let items = document.querySelectorAll(
-    "#featureContainer .carousel .carousel-item"
-  );
-  items.forEach((el) => {
-    const minPerSlide = 3;
-    let next = el.nextElementSibling;
-    for (var i = 1; i < minPerSlide; i++) {
-      if (!next) {
-        // wrap carousel by using first child
-        next = items[0];
-      }
-      let cloneChild = next.cloneNode(true);
-      el.appendChild(cloneChild.children[0]);
-      next = next.nextElementSibling;
-    }
-  });
-  $(document).ready(function () {
-    $("#featureCarousel").carousel({ interval: false });
-    $("#featureCarousel").carousel("pause");
-  });
+let items = document.querySelectorAll(
+"#featureContainer .carousel .carousel-item"
+);
+items.forEach((el) => {
+const minPerSlide = 3;
+let next = el.nextElementSibling;
+for (var i = 1; i < minPerSlide; i++) {
+  if (!next) {
+    // wrap carousel by using first child
+    next = items[0];
+  }
+  let cloneChild = next.cloneNode(true);
+  el.appendChild(cloneChild.children[0]);
+  next = next.nextElementSibling;
+}
+});
+$(document).ready(function () {
+$("#featureCarousel").carousel({ interval: false });
+$("#featureCarousel").carousel("pause");
+});
 </script>
 <script type="text/javascript">
-  var _gaq = _gaq || [];
-  _gaq.push(["_setAccount", "UA-36251023-1"]);
-  _gaq.push(["_setDomainName", "jqueryscript.net"]);
-  _gaq.push(["_trackPageview"]);
+var _gaq = _gaq || [];
+_gaq.push(["_setAccount", "UA-36251023-1"]);
+_gaq.push(["_setDomainName", "jqueryscript.net"]);
+_gaq.push(["_trackPageview"]);
 
-  (function () {
-    var ga = document.createElement("script");
-    ga.type = "text/javascript";
-    ga.async = true;
-    ga.src =
-      ("https:" == document.location.protocol ? "https://ssl" : "http://www") +
-      ".google-analytics.com/ga.js";
-    var s = document.getElementsByTagName("script")[0];
-    s.parentNode.insertBefore(ga, s);
-  })();
+(function () {
+var ga = document.createElement("script");
+ga.type = "text/javascript";
+ga.async = true;
+ga.src =
+  ("https:" == document.location.protocol ? "https://ssl" : "http://www") +
+  ".google-analytics.com/ga.js";
+var s = document.getElementsByTagName("script")[0];
+s.parentNode.insertBefore(ga, s);
+})();
 </script>
 <script>
-  try {
-    fetch(
-      new Request(
-        "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js",
-        { method: "HEAD", mode: "no-cors" }
-      )
-    )
-      .then(function (response) {
-        return true;
-      })
-      .catch(function (e) {
-        var carbonScript = document.createElement("script");
-        carbonScript.src =
-          "//cdn.carbonads.com/carbon.js?serve=CK7DKKQU&placement=wwwjqueryscriptnet";
-        carbonScript.id = "_carbonads_js";
-        document.getElementById("carbon-block").appendChild(carbonScript);
-      });
-  } catch (error) {
-    console.log(error);
-  }
+try {
+fetch(
+  new Request(
+    "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js",
+    { method: "HEAD", mode: "no-cors" }
+  )
+)
+  .then(function (response) {
+    return true;
+  })
+  .catch(function (e) {
+    var carbonScript = document.createElement("script");
+    carbonScript.src =
+      "//cdn.carbonads.com/carbon.js?serve=CK7DKKQU&placement=wwwjqueryscriptnet";
+    carbonScript.id = "_carbonads_js";
+    document.getElementById("carbon-block").appendChild(carbonScript);
+  });
+} catch (error) {
+console.log(error);
+}
 </script>
 
-
-
-</div>
 {% endblock %}
