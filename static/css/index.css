@@ -1,4 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700;900&display=swap');
+/* open Sans */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;700;800&family=Source+Sans+Pro:wght@400;700;900&display=swap');
+/* font-family: 'Open Sans', sans-serif; */
+
+/* source sans pro */
+/* @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700;900&display=swap'); */
+/* font-family: 'Source San', sans-serif; */
+
+/* garamond */
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;600;700&display=swap');
+/* font-family: 'EB Garamond', serif; */
+
 
 :root {
   /* black variations */
@@ -58,12 +69,11 @@
 
 
 /* utils end */
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;700;800&family=Source+Sans+Pro:wght@400;700;900&display=swap');
+
 
 html {
     scroll-behavior: smooth;
     line-height: 1.5;
-    font-family: 'Open Sans', sans-serif;
   }
 
 body{
@@ -72,6 +82,13 @@ body{
   padding-top: 140px;
   background-color: var(--optional-white);
   color: var(--text-on-p);
+}
+
+/* encabezados */
+h1,h2,h3,h4,h5{
+  font-family: 'EB Garamond', serif;
+  font-weight: 700;
+  text-transform: uppercase;
 }
 
 .abs-center{
@@ -133,11 +150,11 @@ body{
 
 /* efecto para cambiar color cuando se pasa el curso por la tarjeta rosa */
 
-/* .bg-rosa:hover{
+.bg-rosa:hover{
   background-color: #404040;
   color: #E2F263!important;
   transform: scale(1.05);
-} */
+}
 
 
 /* map */
