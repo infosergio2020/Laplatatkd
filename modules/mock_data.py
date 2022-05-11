@@ -1,23 +1,23 @@
 beneficios = [
     {
         "icono":"static/img/icono/like.svg",
-        "title":"Classes start whenever you decide",
-        "text":"I'm a paragraph. Click here to add your own text and edit me. Let your users get to know you."
+        "title":"Participación en competencias federadas",
+        "text":"Acceso a competencias nacionales e internacionales."
     },
     {
         "icono":"static/img/icono/like.svg",
         "title":"Try new classes and styles",
-        "text":"I'm a paragraph. Click here to add your own text and edit me. Let your users get to know you."
+        "text":"Capacitación permanente para practicantes e instructores."
     },
     {
         "icono":"static/img/icono/timer.svg",
         "title":"Choose your favorite yoga teachers",
-        "text":"I'm a paragraph. Click here to add your own text and edit me. Let your users get to know you."
+        "text":"Todas las actividades son gratuitas para los asociados con cuota al día."
     },
     {
         "icono":"static/img/icono/users.svg",
         "title":"Pay Per Class",
-        "text":"I'm a paragraph. Click here to add your own text and edit me. Let your users get to know you."
+        "text":"Becas y ayudas económicas para competidores y practicanteso."
     },
 ]
 

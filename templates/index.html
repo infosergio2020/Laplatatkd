@@ -15,6 +15,52 @@
   </div>
 </section>
 
+<!-- carrouseln -->
+<div class="peliculas-recomendadas contenedor">
+  <div class="contenedor-titulo-controles">
+    <h3>Noticias</h3>
+    <div class="indicadores"></div>
+  </div>
+
+  <div class="contenedor-principal">
+    <button role="button" id="flecha-izquierda" class="flecha-izquierda"><i class="fas fa-angle-left"></i></button>
+
+    <div class="contenedor-carousel">
+      <div class="carousel">
+        <div class="pelicula">
+          <a href="#"><img src="https://mastkd.com/wp-content/uploads/2022/05/EDIT-2-Punta-Cana-2022-91-218x150.jpg" alt=""></a>
+        </div>
+        <div class="pelicula">
+          <a href="#"><img src="https://mastkd.com/wp-content/uploads/2022/05/REPUBLICA-DOMINICANA-BARCELO-BAVARO-218x150.jpg" alt=""></a>
+        </div>
+        <div class="pelicula">
+          <a href="#"><img src="https://mastkd.com/wp-content/uploads/2022/05/52042208839_6ca5478ec8_o-218x150.jpg" alt=""></a>
+        </div>
+        <div class="pelicula">
+          <a href="#"><img src="https://mastkd.com/wp-content/uploads/2022/05/EDIT-2-Punta-Cana-2022-91-218x150.jpg" alt=""></a>
+        </div>
+        <div class="pelicula">
+          <a href="#"><img src="https://mastkd.com/wp-content/uploads/2022/05/REPUBLICA-DOMINICANA-BARCELO-BAVARO-218x150.jpg" alt=""></a>
+        </div>
+        <div class="pelicula">
+          <a href="#"><img src="https://mastkd.com/wp-content/uploads/2022/05/52042208839_6ca5478ec8_o-218x150.jpg" alt=""></a>
+        </div>
+        <div class="pelicula">
+          <a href="#"><img src="https://mastkd.com/wp-content/uploads/2022/05/EDIT-2-Punta-Cana-2022-91-218x150.jpg" alt=""></a>
+        </div>
+        <div class="pelicula">
+          <a href="#"><img src="https://mastkd.com/wp-content/uploads/2022/05/REPUBLICA-DOMINICANA-BARCELO-BAVARO-218x150.jpg" alt=""></a>
+        </div>
+        <div class="pelicula">
+          <a href="#"><img src="https://mastkd.com/wp-content/uploads/2022/05/52042208839_6ca5478ec8_o-218x150.jpg" alt=""></a>
+        </div>
+      </div>
+    </div>
+
+    <button role="button" id="flecha-derecha" class="flecha-derecha"><i class="fas fa-angle-right"></i></button>
+  </div>
+</div>
+
 <!-- ejemplo de parralax -->
 <!-- 
 <section class="parrallax" id="seccion1">
@@ -32,155 +78,7 @@
   Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maiores cumque doloribus dicta accusantium officia. Porro, dolore tempora. Modi incidunt animi in libero iste atque officia. Debitis aspernatur tempora soluta tempore!
 </section> -->
 
-<!-- otro carrousel menos piola -->
-<div id="jquery-script-menu">
-  <div class="jquery-script-center">
-    <div class="jquery-script-ads">
-      <script
-        async
-        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2783044520727903"
-        crossorigin="anonymous"
-      ></script>
-      <!-- jQuery_demo -->
-      <ins
-        class="adsbygoogle"
-        style="display: inline-block; width: 728px; height: 90px"
-        data-ad-client="ca-pub-2783044520727903"
-        data-ad-slot="2780937993"
-      ></ins>
-      <script>
-        (adsbygoogle = window.adsbygoogle || []).push({});
-      </script>
-    </div>
-    <div class="jquery-script-clear"></div>
-  </div>
-</div>
 
-<div
-  class="container text-dark"
-  id="featureContainer"
-  style="margin-bottom:10rem;"
->
-  <div class="row mx-auto justify-content-center">
-    <div id="featureCarousel" class="carousel slide" data-bs-ride="carousel">
-      <h1 class="font-weight-light float-start">Noticias</h1>
-      <!-- controles -->
-      <div class="float-end pe-md-4">
-        <a
-          class="indicator"
-          href="#featureCarousel"
-          role="button"
-          data-bs-slide="prev"
-        >
-          <span class="fas fa-chevron-left" aria-hidden="true"></span>
-        </a>
-        &nbsp;&nbsp;
-        <a
-          class="w-aut indicator"
-          href="#featureCarousel"
-          role="button"
-          data-bs-slide="next"
-        >
-          <span class="fas fa-chevron-right" aria-hidden="true"></span>
-        </a>
-      </div>
-      <div class="carousel-inner" role="listbox">
-        <div class="carousel-item active">
-          <div class="col-md-4">
-            <div class="card">
-              <div class="card-img">
-                <img
-                src="https://resizer.glanacion.com/resizer/zSaRE3EBjv7jwZXGgp5UxIvR6qQ=/375x250/smart/filters:format(webp):quality(80)/cloudfront-us-east-1.images.arcpublishing.com/lanacionar/ATJRLM74CRGKPFV3HOO253U4BE.jpg"
-                  class="img-fluid"
-                />
-              </div>
-              <div class="card-img-overlays">Slide 1</div>
-            </div>
-          </div>
-        </div>
-        {% for img in noti %}
-        <div class="carousel-item">
-          <div class="col-md-4">
-            <div class="card">
-              <div class="card-img">
-                <img src="{{img.url}}" class="img-fluid" />
-              </div>
-              <div class="card-img-overlays">{{img.title}}</div>
-            </div>
-          </div>
-        </div>
-        {% endfor %}
-      </div>
-    </div>
-  </div>
-</div>
-
-<script
-  src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
-  integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI="
-  crossorigin="anonymous"
-></script>
-<script>
-  let items = document.querySelectorAll(
-    "#featureContainer .carousel .carousel-item"
-  );
-  items.forEach((el) => {
-    const minPerSlide = 3;
-    let next = el.nextElementSibling;
-    for (var i = 1; i < minPerSlide; i++) {
-      if (!next) {
-        // wrap carousel by using first child
-        next = items[0];
-      }
-      let cloneChild = next.cloneNode(true);
-      el.appendChild(cloneChild.children[0]);
-      next = next.nextElementSibling;
-    }
-  });
-  $(document).ready(function () {
-    $("#featureCarousel").carousel({ interval: false });
-    $("#featureCarousel").carousel("pause");
-  });
-</script>
-<script type="text/javascript">
-  var _gaq = _gaq || [];
-  _gaq.push(["_setAccount", "UA-36251023-1"]);
-  _gaq.push(["_setDomainName", "jqueryscript.net"]);
-  _gaq.push(["_trackPageview"]);
-
-  (function () {
-    var ga = document.createElement("script");
-    ga.type = "text/javascript";
-    ga.async = true;
-    ga.src =
-      ("https:" == document.location.protocol ? "https://ssl" : "http://www") +
-      ".google-analytics.com/ga.js";
-    var s = document.getElementsByTagName("script")[0];
-    s.parentNode.insertBefore(ga, s);
-  })();
-</script>
-<script>
-  try {
-    fetch(
-      new Request(
-        "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js",
-        { method: "HEAD", mode: "no-cors" }
-      )
-    )
-      .then(function (response) {
-        return true;
-      })
-      .catch(function (e) {
-        var carbonScript = document.createElement("script");
-        carbonScript.src =
-          "//cdn.carbonads.com/carbon.js?serve=CK7DKKQU&placement=wwwjqueryscriptnet";
-        carbonScript.id = "_carbonads_js";
-        document.getElementById("carbon-block").appendChild(carbonScript);
-      });
-  } catch (error) {
-    console.log(error);
-  }
-</script>
 
 <!-- porque entrenar con nosotros -->
 
@@ -250,7 +148,7 @@
 <!-- beneficios -->
 
 <div class="container bg-p-light p-4 margin-bene">
-  <h1 class="text-center">Beneficios</h1>
+  <h1 class="text-center">Beneficios de ser sociGraduaciones oficiales</h1>
   <div class="row mb-4">
     {% for b in bene %}
 
