@@ -13,12 +13,12 @@
             {% for link in links %}
             {% if link.title != "Sedes y horarios" %}
               <li class="nav-item m-2">
-                <a class="btn btn-link-sl" href={{link.url}} >{{link.title}}</a>
+                <a class="btn btn-link-sl tamaño-li" href={{link.url}} >{{link.title}}</a>
               </li> 
             {% endif %}  
               {% if link.title == "Sedes y horarios" %}
               <li class="nav-item dropdown m-2">
-                <a class="btn btn-link-sl dropdown-toggle" href={{link.url}} id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <a class="btn btn-link-sl dropdown-toggle tamaño-li" href={{link.url}} id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                   {{link.title}}
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">

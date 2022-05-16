@@ -157,7 +157,7 @@ botones_navbar = [
         "url":"/sedesHorarios",
     },
     {
-        "title":"Socios",
+        "title":"Asociados",
         "url":"/membership",
     },
     {

@@ -5,7 +5,9 @@
   .nav--hidden{
     transform: translateY(calc(-1 * 328px));
   }
-  
+  .tamaño-li{
+    font-size: 30px;
+  }
   
   @media (min-width: 768px){
     .nav--hidden{
