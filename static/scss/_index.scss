@@ -52,6 +52,20 @@
 .centrar-div{
   display: flex;
   justify-content: center;
+  padding: 4rem;
+
+}
+.centrar-div-col .col{
+  padding: 2rem;
+}
+@media (max-width: 768px){
+  .centrar-div-col {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  
 }
 .centrar-text{
   display: flex;
@@ -265,7 +279,7 @@ section{
 }
 
 #seccion4{
-  background-image: url('../img/contacto/contacto.jpg');
+  background-image: url('../img/contacto/contacto.webp');
 }
 
 .margin-porque{
@@ -276,3 +290,26 @@ section{
   
   background-color: #A6A6A6;
   }
+.distribucion_noticia{
+  display: flex;
+
+}
+
+.intro{
+  
+    padding: 0.5rem;
+    height: 50%;
+    width: 400px;
+    box-sizing: border-box;
+    position: absolute;
+    background: rgba(27,27,27,.5);
+    color: #fff;
+    bottom: 2rem;
+    transition: .5s;
+
+}
+.tamaño-col{
+  width: 95%;
+  height: 21rem;
+  position: relative;
+}
