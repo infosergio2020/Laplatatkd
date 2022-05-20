@@ -1,4 +1,6 @@
 
+
+
 /* banner */
 
 .banner{
@@ -18,7 +20,7 @@
     /* c8b700c4 */
     /* f8e343ed */
 
-    background-color: #f8e343ed;
+    background-color: var(--verdeLight);
     transition: all .4s cubic-bezier(0.22, 0.61, 0.36, 1);
 }
   .banner--active{

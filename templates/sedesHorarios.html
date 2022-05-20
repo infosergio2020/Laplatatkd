@@ -10,7 +10,7 @@
 <!-- nombre de la sede -->
 <div class="fondo-color">
       <div class=" centrar-div">
-        <div id="kukkiwon" class="centrar-text bg-p-light py-5 text-center border anchuraCard rounded-pill">
+        <div id="kukkiwon" class="centrar-text bg-p-light py-5 text-center border anchuraCard">
           <h1 class="txt-color-sl">Academia kukkiwon</h1>
           <h2>Encontrarás a los mejores profes.</h2>
         </div>
@@ -51,11 +51,11 @@
                                 <p class="fs-5"><span class="text-uppercase fw-bold"> edad:</span> {{profe.edades}}</p>
                                 <p class="fs-5"><span class="text-uppercase fw-bold"> dias:</span> {{profe.dias}}</p>
                                 <!-- boton para cerrar el banner -->
-                                <button class="btn btn-warning text-uppercase fw-bold" onclick="toggleCard('banner-{{loop.index}}','banner--active')"> cerrar </button>    
+                                <button class="btn color-btn text-uppercase fw-bold" onclick="toggleCard('banner-{{loop.index}}','banner--active')"> cerrar </button>    
                               </div>
                             </div>
                             <!-- boton para abrir el banner -->
-                            <button tabindex="0" class="btn btn-warning" onclick="toggleCard('banner-{{loop.index}}','banner--active')"> ver detalle </button>
+                            <button tabindex="0" class="btn color-btn" onclick="toggleCard('banner-{{loop.index}}','banner--active')"> ver detalle </button>
                           </div>
                   <!-- </div> -->
                 {% endfor %}
@@ -136,7 +136,7 @@
                               </div>
                             </div>
                             <!-- boton para abrir el banner -->
-                            <button tabindex="0" class="btn btn-warning" onclick="toggleCard('banner-{{loop.index}}','banner--active')"> ver detalle </button>
+                            <button tabindex="0" class="btn color-btn" onclick="toggleCard('banner-{{loop.index}}','banner--active')"> ver detalle </button>
                           </div>
                   </div>
                 {% endfor %}

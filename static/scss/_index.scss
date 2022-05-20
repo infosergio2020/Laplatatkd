@@ -295,8 +295,12 @@ section{
 
 .fondo-color{
   
-  background-color: #A6A6A6;
+  background-color: var(--optional-white);
   }
+
+.color-btn{
+  background-color: var(--verdeFuerte);
+}  
 .distribucion_noticia{
   display: flex;
 
