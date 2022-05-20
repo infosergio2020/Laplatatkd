@@ -20,9 +20,10 @@
       <div class="container-md ">
           
       <!-- carrousel de profes -->
-          <div class="row">
-            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-              <div class="carousel-indicators">
+          <div class="espacio_3">
+            
+            <!-- <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel"> -->
+              <!-- <div class="carousel-indicators">
                 {% for profe in lista_profes %}
                   {% if loop.index - 1 == 0 %}
                     <button type="button" data-bs-target="#carouselExampleControls" data-bs-slide-to="{{loop.index - 1}}" class="active" aria-current="true" aria-label="Slide {{loop.index}}"></button>
@@ -30,14 +31,14 @@
                     <button type="button" data-bs-target="#carouselExampleControls" data-bs-slide-to="{{loop.index - 1}}" aria-label="Slide {{loop.index}}"></button>
                   {% endif %}
                 {% endfor %}
-              </div>
-              <div class="carousel-inner">
+              </div> -->
+              <!-- <div class="carousel-inner"> -->
                 {% for profe in lista_profes %}
-                  {% if loop.index - 1 == 0 %}
+                  <!-- {% if loop.index - 1 == 0 %}
                     <div class="carousel-item active" data-bs-interval="false">
                   {% else %}
                     <div class="carousel-item" data-bs-interval="false">
-                  {% endif %}
+                  {% endif %} -->
                           <div class="card card_rel card-radius-1 my-5" style="width: 18rem;">
                             <img src={{profe.foto}} class="card-img-top" alt="...">
                             <div class="card-body text-dark">
@@ -56,20 +57,20 @@
                             <!-- boton para abrir el banner -->
                             <button tabindex="0" class="btn btn-warning" onclick="toggleCard('banner-{{loop.index}}','banner--active')"> ver detalle </button>
                           </div>
-                  </div>
+                  <!-- </div> -->
                 {% endfor %}
-              </div>
-
+              <!-- </div> -->
+            
               <!-- controless -->
-              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+              <!-- <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Previous</span>
               </button>
               <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Next</span>
-              </button>
-            </div>
+              </button> -->
+            <!-- </div> -->
           </div>
 
 
@@ -79,7 +80,10 @@
             <div class="col-md-6 mx-auto mb-5">
               <!-- <h3 class="text-center txt-color-sl">Ubicación de la sede:</h3> -->
               <h3 class="text-center text-dark">Ubicación de la sede:</h3>
-              <div class="estilo-mapa" id="kukkiwonmap"></div>
+              <div class="d-flex justify-content-center">
+                <div class="estilo-mapa" id="kukkiwonmap"></div>
+              </div>
+              
             </div>
           </div>
 

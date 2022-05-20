@@ -250,7 +250,14 @@ h1,h2,h3,h4,h5{
 }
 // estilos del mapa de las sedes
 .estilo-mapa{
-  height: 450px;
+  height: 300px;
+  width: 350px;
+}
+@media (max-width: 768px){
+  .estilo-mapa{
+    height: 200px;
+    width: 250px;
+  }
 }
 /* agregando parallax */
 section{
