@@ -18,3 +18,31 @@
         
     }   
   }
+
+  .acomodar_icon{
+      margin-left: -6rem;
+      margin-top: 7rem;
+  }
+
+  @media (max-width: 768px){
+    .acomodar_icon{
+        margin-left: 18rem;
+        margin-top: 0rem;
+    } 
+  }
+
+  .acomodar_icono_text{
+    display: flex; 
+    flex-direction: row;
+    justify-content: space-between;
+  
+  }
+
+  @media (max-width: 768px){
+    .acomodar_icono_text{
+        display: flex; 
+        flex-direction: column;
+        justify-content: space-between;
+      
+      } 
+  }

@@ -6,11 +6,16 @@
     transform: translateY(calc(-1 * 328px));
   }
   .tamaño-li{
-    font-size: 30px;
+    font-size: calc(1em + 1vw);
+    font-weight: bold;
   }
   
   @media (min-width: 768px){
     .nav--hidden{
       transform: translateY(calc(-1 * 130px));
     }    
+  }
+
+  .color_nav{
+    background-color: #404040;
   }
