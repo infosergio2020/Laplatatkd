@@ -50,6 +50,14 @@
     flex-direction: row;
     justify-content: center;
 }
+
+@media (max-width: 768px){
+  .fondo_mapa{
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+}
+}  
   .acomodar_icono_text{
     display: flex; 
     flex-direction: row;
