@@ -58,8 +58,8 @@
   
     background-color: #4dc247;
   
-    width: 3.125rem;
-    height: 3.125rem;
+    width: 6.125rem;
+    height: 6.125rem;
     padding: 5px;
   
     border-radius: 50%;
@@ -73,7 +73,13 @@
     position: fixed !important;
     z-index: 16000160 !important;
   }
-  
+  @media (max-width: 768px){
+      .btn-whatsapp{
+        width: 4.125rem;
+        height: 4.125rem;
+      }   
+  }
+
   .btn-whatsapp:hover{
     opacity: .8;
     box-shadow: rgb(0 0 0 / 70%) 2px 2px 11px;

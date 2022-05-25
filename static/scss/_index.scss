@@ -47,11 +47,25 @@
 
 .anchuraCard{
   width: 62rem;
-  height: 10rem;
+  height: 6rem;
 }
 .centrar-div{
   display: flex;
   justify-content: center;
+  padding: 4rem;
+
+}
+.centrar-div-col .col{
+  padding: 2rem;
+}
+@media (max-width: 768px){
+  .centrar-div-col {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  
 }
 .centrar-text{
   display: flex;
@@ -77,6 +91,25 @@
 
 .txt-color-sl{
   color: var(--verdeFuerte);
+  font-weight: 100 !important;
+  font-size: calc(1.4em + 0vw)!important;
+  font-family: "Open Sans"!important;
+  font-weight: bold!important;
+  height: 1rem;
+}
+
+.nom_mapa{
+  color: var(--verdeFuerte);
+  font-weight: 100 !important;
+  font-size: calc(1.4em + 0vw)!important;
+  font-family: "Open Sans"!important;
+  font-weight: bold!important;
+}
+.tam_h2{
+  font-weight: 100 !important;
+  font-size: calc(1em + 0vw)!important;
+  font-family: "Open Sans"!important;
+  height: 1rem;
 }
 
 .txt-color-sd{
@@ -228,7 +261,7 @@ h1,h2,h3,h4,h5{
 
 .margin-bene{
   margin-top: 10rem;
-  margin-bottom: 10rem;
+  margin-bottom: 8rem;
 }
 
 .marginportada{
@@ -236,7 +269,14 @@ h1,h2,h3,h4,h5{
 }
 // estilos del mapa de las sedes
 .estilo-mapa{
-  height: 450px;
+  height: 239px;
+  width: 413px;
+}
+@media (max-width: 768px){
+  .estilo-mapa{
+    height: 200px;
+    width: 250px;
+  }
 }
 /* agregando parallax */
 section{
@@ -265,9 +305,41 @@ section{
 }
 
 #seccion4{
-  background-image: url('../img/contacto/contacto.jpg');
+  background-image: url('../img/contacto/contacto.webp');
 }
 
 .margin-porque{
   margin-top: 2rem;
+}
+
+.fondo-color{
+  
+  background-color: var(--optional-white);
+  }
+
+.color-btn{
+  background-color: var(--verdeFuerte);
+}  
+.distribucion_noticia{
+  display: flex;
+
+}
+
+.intro{
+  
+    padding: 0.5rem;
+    height: 50%;
+    width: 400px;
+    box-sizing: border-box;
+    position: absolute;
+    background: rgba(27,27,27,.5);
+    color: #fff;
+    bottom: 2rem;
+    transition: .5s;
+
+}
+.tamaño-col{
+  width: 95%;
+  height: 21rem;
+  position: relative;
 }

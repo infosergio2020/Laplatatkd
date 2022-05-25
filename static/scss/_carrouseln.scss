@@ -110,8 +110,8 @@
 	display: flex;
 	justify-content: center;
 	align-items: end;
-	margin-top: 4rem;
-	margin-bottom: 4rem;
+	// margin-top: 4rem;
+	// margin-bottom: 4rem;
 }
 
 .contenedor-titulo-controles h3 {
@@ -229,7 +229,7 @@
 
 	.peliculas-recomendadas .contenedor-carousel .carousel {
 		display: grid;
-		grid-template-columns: repeat(3, 1fr);
+		grid-template-columns: repeat(2, 1fr);
 		gap: 20px;
 	}
 

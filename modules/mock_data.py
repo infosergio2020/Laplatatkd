@@ -175,27 +175,27 @@ botones_navbar = [
 # NOTA: tamaños definidos small: 640x425; medium: 1920x1276; large: 2400x1595; 
 
 clase_info = [
-        {
-            "foto":"https://source.unsplash.com/HYDUXzWSF5I/640x425",
-            "nombre":"nombre-1",
-            "turno":"turno-1",
-            "edades":"de 3 a 5 años",
-            "dias":"lunes, jueves y viernes"
-        },
-        {
-            "foto":"https://source.unsplash.com/ngd2uo1eyZg/640x425",
-            "nombre":"nombre-2",
-            "turno":"turno-2",
-            "edades":"de 6 a 13 años",
-            "dias":"martes y miercoles"
-        },
-        {
-            "foto":"https://source.unsplash.com/igLzPKOvZNw/640x425",
-            "nombre":"nombre-3",
-            "turno":"turno-3",
-            "edades":"de 8 a 18 años",
-            "dias":"martes y miercoles"
-        },
+        # {
+        #     "foto":"https://source.unsplash.com/HYDUXzWSF5I/640x425",
+        #     "nombre":"nombre-1",
+        #     "turno":"turno-1",
+        #     "edades":"de 3 a 5 años",
+        #     "dias":"lunes, jueves y viernes"
+        # },
+        # {
+        #     "foto":"https://source.unsplash.com/ngd2uo1eyZg/640x425",
+        #     "nombre":"nombre-2",
+        #     "turno":"turno-2",
+        #     "edades":"de 6 a 13 años",
+        #     "dias":"martes y miercoles"
+        # },
+        # {
+        #     "foto":"https://source.unsplash.com/igLzPKOvZNw/640x425",
+        #     "nombre":"nombre-3",
+        #     "turno":"turno-3",
+        #     "edades":"de 8 a 18 años",
+        #     "dias":"martes y miercoles"
+        # },
         {
             "foto":"https://source.unsplash.com/XS5C2AmDsLU/640x425",
             "nombre":"nombre-4",
