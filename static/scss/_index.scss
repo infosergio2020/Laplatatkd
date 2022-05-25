@@ -325,19 +325,42 @@ section{
 
 }
 
-.intro{
-  
-    padding: 0.5rem;
-    height: 50%;
-    width: 400px;
-    box-sizing: border-box;
-    position: absolute;
-    background: rgba(27,27,27,.5);
-    color: #fff;
-    bottom: 2rem;
-    transition: .5s;
-
+.intro__container{
+  position: relative;
+  overflow: hidden;
 }
+
+
+.intro{      
+  font-size: .9em;
+  font-weight: 500;
+  padding: 1rem 1.6rem;
+  height: 65%;
+  width: 25rem;
+  box-sizing: border-box;
+  position: absolute;
+  background: rgba(137,137,35,0.7411764706);
+  color: #fff;
+  bottom: 0;
+  left: 0px;
+  transition: .3s ease-in;
+  border-radius: 25% 0% 100% 0%/46% 100% 0% 54%;
+}
+@media (min-width:768px) {
+  .intro{
+    bottom: -20%;
+  }
+
+  .intro__container:hover{
+    .intro{
+      bottom: 0;
+    }
+  }
+}
+
+
+
+
 .tamaño-col{
   width: 95%;
   height: 21rem;
