@@ -30,7 +30,26 @@
         margin-top: 0rem;
     } 
   }
-
+.fondo_mapa{
+    // height: 30vh;
+    // width: 100vh;
+    width: 62rem;
+    padding: 2rem;
+    align-items: center;
+    margin-top: 4rem!important;
+    margin-bottom: 4rem!important;
+    background-color:var(--primary-light);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 2rem;
+    align-items: center;
+}
+.juntar_text_icono{
+    display: flex; 
+    flex-direction: row;
+    justify-content: center;
+}
   .acomodar_icono_text{
     display: flex; 
     flex-direction: row;
@@ -46,3 +65,7 @@
       
       } 
   }
+
+//   .margin_card{
+//     margin-bottom: 4rem;
+//   }

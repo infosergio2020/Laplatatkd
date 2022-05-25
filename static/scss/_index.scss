@@ -47,7 +47,7 @@
 
 .anchuraCard{
   width: 62rem;
-  height: 10rem;
+  height: 6rem;
 }
 .centrar-div{
   display: flex;
@@ -91,6 +91,25 @@
 
 .txt-color-sl{
   color: var(--verdeFuerte);
+  font-weight: 100 !important;
+  font-size: calc(1.4em + 0vw)!important;
+  font-family: "Open Sans"!important;
+  font-weight: bold!important;
+  height: 1rem;
+}
+
+.nom_mapa{
+  color: var(--verdeFuerte);
+  font-weight: 100 !important;
+  font-size: calc(1.4em + 0vw)!important;
+  font-family: "Open Sans"!important;
+  font-weight: bold!important;
+}
+.tam_h2{
+  font-weight: 100 !important;
+  font-size: calc(1em + 0vw)!important;
+  font-family: "Open Sans"!important;
+  height: 1rem;
 }
 
 .txt-color-sd{
