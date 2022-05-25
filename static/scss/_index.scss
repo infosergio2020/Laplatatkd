@@ -47,14 +47,21 @@
 
 .anchuraCard{
   width: 62rem;
-  height: 6rem;
+  //height: 6rem;
 }
 .centrar-div{
   display: flex;
   justify-content: center;
-  padding: 4rem;
-
+  padding: 0;
 }
+
+@media (min-width:768px) {
+  .centrar-div{
+    padding: 4rem;
+  }
+}
+
+
 .centrar-div-col .col{
   padding: 2rem;
 }
@@ -259,10 +266,11 @@ h1,h2,h3,h4,h5{
   background: linear-gradient(0deg, rgba(0,0,0,0.5998774509803921) 20%, rgba(246,251,36,0) 35%, rgba(171,175,25,0) 71%, rgba(0,0,0,0.6362920168067228) 84%);
 }
 
-.margin-bene{
-  margin-top: 10rem;
+.margin-bene {
+  margin-top: 1rem;
   margin-bottom: 8rem;
 }
+
 
 .marginportada{
   margin-top: 20rem;
