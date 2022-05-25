@@ -30,10 +30,54 @@
 .icono_left{
     margin-left: 8rem;
  }
+.cont_text_area{
 
+    width: 100%;
+}
+ .contenedor_form{
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     
+     background-color: var(--primary-light);
+ }
  .form_juntar_correo_asunto{
     display: flex;
     flex-direction: row;
     justify-content: center;
     gap: 2rem;
  }
+
+ @media (max-width: 980px){
+    .centrar-div-col {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+    }
+    
+  }
+
+
+.margin_top{
+    margin-top: 4rem;
+}
+
+.form-control {
+    background-color: var(--primary-light)!important;
+    color: var(--text-on-p)!important;
+}
+
+.placeholder {
+    background-color: var(--primary-light)!important;
+    color: var(--text-on-p)!important;
+}
+
+.contenedor_contacto{
+    display: flex;
+    justify-content: center;
+}
+
+.tamaño_formulario_img{
+    width: 60%;
+}
