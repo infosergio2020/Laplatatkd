@@ -44,7 +44,7 @@
  .form_juntar_correo_asunto{
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    // justify-content: center;
     gap: 2rem;
  }
 
@@ -80,4 +80,8 @@
 
 .tamaño_formulario_img{
     width: 60%;
+}
+
+.btn-verde{
+    background-color: var(--verdeFuerte);
 }
