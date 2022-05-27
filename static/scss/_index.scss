@@ -47,14 +47,21 @@
 
 .anchuraCard{
   width: 62rem;
-  height: 6rem;
+  //height: 6rem;
 }
 .centrar-div{
   display: flex;
   justify-content: center;
-  padding: 4rem;
-
+  padding: 0;
 }
+
+@media (min-width:768px) {
+  .centrar-div{
+    padding: 4rem;
+  }
+}
+
+
 .centrar-div-col .col{
   padding: 2rem;
 }
@@ -259,10 +266,11 @@ h1,h2,h3,h4,h5{
   background: linear-gradient(0deg, rgba(0,0,0,0.5998774509803921) 20%, rgba(246,251,36,0) 35%, rgba(171,175,25,0) 71%, rgba(0,0,0,0.6362920168067228) 84%);
 }
 
-.margin-bene{
-  margin-top: 10rem;
+.margin-bene {
+  margin-top: 1rem;
   margin-bottom: 8rem;
 }
+
 
 .marginportada{
   margin-top: 20rem;
@@ -325,19 +333,42 @@ section{
 
 }
 
-.intro{
-  
-    padding: 0.5rem;
-    height: 50%;
-    width: 400px;
-    box-sizing: border-box;
-    position: absolute;
-    background: rgba(27,27,27,.5);
-    color: #fff;
-    bottom: 2rem;
-    transition: .5s;
-
+.intro__container{
+  position: relative;
+  overflow: hidden;
 }
+
+
+.intro{      
+  font-size: .9em;
+  font-weight: 500;
+  padding: 1rem 1.6rem;
+  height: 65%;
+  width: 25rem;
+  box-sizing: border-box;
+  position: absolute;
+  background: rgba(137,137,35,0.7411764706);
+  color: #fff;
+  bottom: 0;
+  left: 0px;
+  transition: .3s ease-in;
+  border-radius: 25% 0% 100% 0%/46% 100% 0% 54%;
+}
+@media (min-width:768px) {
+  .intro{
+    bottom: -20%;
+  }
+
+  .intro__container:hover{
+    .intro{
+      bottom: 0;
+    }
+  }
+}
+
+
+
+
 .tamaño-col{
   width: 95%;
   height: 21rem;
