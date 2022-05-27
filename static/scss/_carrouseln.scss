@@ -227,11 +227,24 @@
 		overflow: visible;
 	}
 
-	.peliculas-recomendadas .contenedor-carousel .carousel {
-		display: grid;
-		grid-template-columns: repeat(2, 1fr);
-		gap: 20px;
+	@media (max-width:960px) {
+		.peliculas-recomendadas .contenedor-carousel .carousel {
+			display: grid;
+			grid-template-columns: repeat(2, 1fr);
+			gap: 20px;
+			padding: 2rem;
+		}
 	}
+
+	@media (max-width:768px) {
+		.peliculas-recomendadas .contenedor-carousel .carousel {
+			display: grid;
+			grid-template-columns: repeat(1, 1fr);
+			gap: 20px;
+			padding: 2rem;
+		}
+	}
+	
 
 	.peliculas-recomendadas .indicadores,
 	.peliculas-recomendadas .flecha-izquierda,

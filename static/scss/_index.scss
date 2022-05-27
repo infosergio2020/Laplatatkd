@@ -49,6 +49,14 @@
   width: 62rem;
   //height: 6rem;
 }
+
+@media (max-width:986px) {
+  .anchuraCard{
+
+    height: 6rem;
+  }
+
+}
 .centrar-div{
   display: flex;
   justify-content: center;
