@@ -1,89 +1,52 @@
 {% extends 'partials/_layout.html' %}
 {% block body %}
 <div id="membre" class="container-md margin-bene">
-    <div class="centrar-div">
-      <div class="centrar-text bg-p-light py-3 text-center border anchuraCard">
-        <h1 class="txt-color-sl">Beneficios de pertener a nuestra asociación </h1> 
-      </div>
-
-    </div>
     
-    <div class="container">
-       
+    
+    
+<!--bg-p-light-->
+<div class="container">
+        <div class="row pb-5">
+          <div class="col-12 bg-p-light py-4 rounded">
+            <h1 class="text-center txt-color-sl m-0">Beneficios de pertenecer a nuestra asociación </h1> 
+          </div>
+        </div>
       <!-- los 4 cards -->
-        <div class="flex-socios-card card-deck mb-3 text-center">
-            <!-- primer card -->
-            <div class="card mx-5 mb-4">
-                <div class="card-header pb-4" style="background-color: var(--secondary);">
-                  <h2 class="my-0 tam_h2 text-dark">Graduaciones oficiales </h2>
+        <div class="row">
+            <div class="col mb-5 mb-md-0 p-0">
+              <!-- primer card -->
+              <div class="card text-dark h-100">
+                <div class="card-header text-center bg-verdeLight-without-t">
+                  <h2 class="tam_h2 m-0">Graduaciones oficiales </h2>
                 </div>
-                <!-- <div class="card-body">
-                  <h1 class="card-title pricing-card-title text-dark">$15 <small class="text-muted">/ mo</small></h1>
-                  <ul class="list-unstyled mt-3 mb-4 text-dark">
-                    <li>20 users included</li>
-                    <li>10 GB of storage</li>
-                    <li>Priority email support</li>
-                    <li>Help center access</li>
-                  </ul>
-                  </div> -->
-                <div class="card-header" >
-
-                    <div class="list-unstyled mt-3 mb-4 text-dark">
+                <div class="card-body">
                       <p class="fs-6">La Confederación Argentina de Taekwondo (CAT) en su carácter de Ente Rector del Taekwondo a nivel Nacional abala las graduaciones otorgadas por nuestra asociación como garantía de nuestro profesionalismo y trabajo.</p>
-               
-                      
-                    </div>
-                    
                 </div>
+              </div>
             </div>
-            <!-- segundo card -->
-            <div class="card mx-5 mb-4">
-                <div class="card-header pb-4"  style="background-color: var(--secondary);">
-                  <h2 class="my-0 tam_h2 text-dark">Participación en competencias</h2>
+            <div class="col mb-5 mb-md-0 p-0 px-md-2">
+              <!-- segundo card -->
+              <div class="card text-dark h-100">
+                <div class="card-header text-center bg-verdeLight-without-t"> 
+                  <h2 class="tam_h2 m-0"> Participación en competencias </h2> 
                 </div>
-                <!-- <div class="card-body"  style="background-color: #595859;">
-                  <h1 class="card-title pricing-card-title text-light">$15 <small class="text-muted text-light">/ mo</small></h1>
-                  <ul class="list-unstyled mt-3 mb-4 text-light">
-                    <li>20 users included</li>
-                    <li>10 GB of storage</li>
-                    <li>Priority email support</li>
-                    <li>Help center access</li>
-                  </ul>
-                  </div> -->
-                <div class="card-header" >
-
-                    <div class="list-unstyled mt-3 mb-4 text-dark">
-                        <p class="fs-6">Tendrás la posibilidad de disputar los eventos nacionales e internacionales oficiales representando a tu escuela, asociación, país, gracias a pertenecer a un ente reconocido.</p>
-                      
-                    </div>
-                    
+                <div class="card-body">
+                    <p class="fs-6">Tendrás la posibilidad de disputar los eventos nacionales e internacionales oficiales representando a tu escuela, asociación, país, gracias a pertenecer a un ente reconocido.</p>
                 </div>
+              </div>
             </div>
-            <!-- tercer card -->
-            <div class="card mx-5 mb-4">
-                <div class="card-header" style="background-color: var(--secondary);">
-                  <h2 class="my-0 tam_h2 text-dark">Capacitación</h2>
+            <div class="col mb-0 mb-md-0 p-0">
+              <!-- tercer card -->
+              <div class="card text-dark h-100">
+                <div class="card-header text-center bg-verdeLight-without-t">
+                  <h2 class="tam_h2 m-0">Cursos de capacitación</h2>
                 </div>
-                <!-- <div class="card-body">
-                  <h1 class="card-title pricing-card-title text-dark">$15 <small class="text-muted">/ mo</small></h1>
-                  <ul class="list-unstyled mt-3 mb-4 text-dark">
-                    <li>20 users included</li>
-                    <li>10 GB of storage</li>
-                    <li>Priority email support</li>
-                    <li>Help center access</li>
-                  </ul>
-                  </div> -->
-                <div class="card-header">
-
-                    <div class="list-unstyled mt-3 mb-4 text-dark">
-                      <p class="fs-6">Periódicamente se ofrecen cursos de capacitación en diversas áreas de interés tanto para deportistas como para entrenadores, de esta forma nos mantenemos a la vanguardia en conocimientos
-                      </p>
-                      
-                    </div>
+                <div class="card-body">
+                      <p class="fs-6">Periódicamente se ofrecen capacitaciones en diversas áreas de interés tanto para deportistas como para entrenadores, de esta forma nos mantenemos a la vanguardia en conocimientos</p>
                 </div>
+              </div>
             </div>
         </div>
     </div>
-    
 </div>
 {% endblock %}
