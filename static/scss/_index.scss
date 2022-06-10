@@ -144,15 +144,18 @@ body{
   position: relative;
   font-family: 'Open Sans', sans-serif;
   padding-top: 140px;
-  background-color: var(--optional-white);
+  background-color: var(--primary);;
   color: var(--text-on-p);
 }
 
 /* encabezados */
 h1,h2,h3,h4,h5{
-  font-family: 'EB Garamond', serif;
+
   font-weight: 700;
   text-transform: uppercase;
+}
+h3{
+  font-size: 18px;
 }
 
 .abs-center{
@@ -330,7 +333,7 @@ section{
 
 .fondo-color{
   
-  background-color: var(--optional-white);
+  background-color: var(--primary);
   }
 
 .color-btn{

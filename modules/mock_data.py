@@ -129,23 +129,52 @@ contacto={
     },
 }
 
-sedesHorarios=[{
-    "dato":{ 
-            "Academia kukkiwon",
+sedesHorarios=[
+    {
+        "nom_sede":"Academia kukkiwon",
+        "dir_sede": "Av.25 N° 1230 - Club Universal",
+        "turno": "Infantil - 6+ | Juvenil | Adulto",
+        "colapso_href":"#Academia kukkiwon",
+        "des_turno1":"Infantiles: lunes-miércoles y viernes de 18:00 a 19:00.                            Martes y jueves de 18:00 a 19:00",
+        "des_turno2":"Juvenil: martes y jueves de 18:00 a 19:00",
+        "des_turno3":"Adultos: Lunes-miercoels y viernes de 20: 00 a 21:00",
     },
-    "dato":{ 
-            "Cit",
+    {
+        "nom_sede":"Cit-Centro Integral de Tae kwon do",
+        "dir_sede": "Calle 9 e/ 69 y 70 - Club Union Vecianl",
+        "turno": "Infantil - 6+ | Juvenil | Adulto | Competencia",
+        "colapso_href":"#Cit-Centro Integral de Tae kwon do",
+        "des_turno":"lkñ",
     },
-    "dato":{ 
-            "Club astilleros",
+    {
+        "nom_sede":"Club astilleros",
+        "dir_sede": "Av. Horacio Cestino 774 - Club Astillero Rio Santiago - Ensenada",
+        "turno": "Infantil - 4+ | Juvenil | Adulto",
+        "colapso_href":"#Club astilleros",
+        "des_turno":"jio",
     },
-    "dato":{ 
-            "Comedor",
+    {
+        "nom_sede":"Comedor",
+        "dir_sede": "Calle 477 e/ 138 y 139 - J.Gorina",
+        "turno": "Infantil - 6+ | Juvenil ",
+        "colapso_href":"#Comedor",
+        "des_turno":"bui",
     },
-    "dato":{ 
-            "Corazones del retiro",
-    },
-}]
+    {
+        "nom_sede":"Corazones del retiro",
+        "dir_sede": "Calle falsa. Barrio El Retiro",
+        "turno": "Infantil - 6+ | Juvenil | Adulto",
+        "colapso_href":"#Corazones del retiro",
+        "des_turno":"uib",
+    }, 
+    {
+        "nom_sede":"Polideportivo- Los Hornos",
+        "dir_sede": "Av.66 N°2865 - Los Hornos",
+        "turno": "Infantil - 7+ | Juvenil",
+        "colapso_href":"#Polideportivo- Los Hornos",
+        "des_turno":"nui",
+    },     
+]
 
 botones_navbar = [
     {
@@ -198,7 +227,7 @@ clase_info = [
         # },
         {
             "foto":"https://source.unsplash.com/XS5C2AmDsLU/640x425",
-            "nombre":"nombre-4",
+            "nombre":"Academia-Kukiwon",
             "turno":"turno-4",
             "edades":"de 19 a 25 años",
             "dias":"lunes, jueves y viernes"

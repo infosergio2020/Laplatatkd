@@ -1,9 +1,20 @@
-.espacio_3{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); 
+.espacio_cen{
+  display: grid;
     justify-items:center;
     margin-left: 4rem;
     margin-right: 4rem;
+}
+.espacio_3{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    justify-items:flex-start;
+    gap: 3rem;
+    margin-left: 16rem;
+    margin-right: 4rem;
+}
+.centrar_sedes{
+  display: grid;
+  justify-items:center;
 }
 
 @media (max-width: 1040px){
@@ -46,6 +57,9 @@
     justify-content: center;
     gap: 2rem;
     align-items: center;
+}
+.tamaño{
+  width: 20rem;
 }
 .juntar_text_icono{
     display: flex; 
