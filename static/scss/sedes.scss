@@ -19,15 +19,21 @@
 
 @media (max-width: 1040px){
     .espacio_3{
-        
-        grid-template-columns: repeat(2, 1fr); 
+      justify-items:flex-start;
+      gap: 3rem;
+      margin-left: 0rem;
+      margin-right: 0rem;
+
         
     }   
   }
 @media (max-width: 768px){
     .espacio_3{
-        
-        grid-template-columns: repeat(1, 1fr); 
+      justify-items:flex-start;
+      gap: 3rem;
+      margin-left: 0rem;
+      margin-right: 0rem;
+
         
     }   
   }
