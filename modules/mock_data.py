@@ -144,14 +144,18 @@ sedesHorarios=[
         "dir_sede": "Calle 9 e/ 69 y 70 - Club Union Vecianl",
         "turno": "Infantil - 6+ | Juvenil | Adulto | Competencia",
         "colapso_href":"#Cit-Centro Integral de Tae kwon do",
-        "des_turno":"lkñ",
+        "des_turno1":"Competencia :Lunes miércoles y viernes  15:30 Martes y jueves 18:00",
+        "des_turno2":"Infantil: Lunes miércoles y viernes  de 18:00 a 19:00",
+        "des_turno3":"Juvenil: Lunes miércoles y viernes  de 19:00 a 20:00",
+        "des_turno4":"Adulto: Lunes miércoles y viernes  de 20:00 a 21:00",
     },
     {
         "nom_sede":"Club astilleros",
         "dir_sede": "Av. Horacio Cestino 774 - Club Astillero Rio Santiago - Ensenada",
         "turno": "Infantil - 4+ | Juvenil | Adulto",
         "colapso_href":"#Club astilleros",
-        "des_turno":"jio",
+        "des_turno1":"Infantil: Lunes miércoles y viernes  de 18:00 a 19:00",
+        "des_turno2":"Juvenil: Lunes miércoles y viernes de 19:00 a 20:00",
     },
     {
         "nom_sede":"Comedor",
@@ -165,14 +169,17 @@ sedesHorarios=[
         "dir_sede": "Calle falsa. Barrio El Retiro",
         "turno": "Infantil - 6+ | Juvenil | Adulto",
         "colapso_href":"#Corazones del retiro",
-        "des_turno":"uib",
+        "des_turno1":"Infantil y juvenil: Lunes miércoles y viernes de 18:00 a 19:00.",
+        "des_turno2":"Adulto: Lunes miércoles y viernes  de 19:00 a 20:00.",
+        
     }, 
     {
         "nom_sede":"Polideportivo- Los Hornos",
         "dir_sede": "Av.66 N°2865 - Los Hornos",
         "turno": "Infantil - 7+ | Juvenil",
         "colapso_href":"#Polideportivo- Los Hornos",
-        "des_turno":"nui",
+        "des_turno1":"Infantil: Martes y jueves de 18:00 a 19:00",
+        "des_turno2":"Juvenil: Martes y jueves de 19:00 a 20:00",
     },     
 ]
 
