@@ -138,6 +138,7 @@ sedesHorarios=[
         "des_turno1":"Infantiles: lunes-miércoles y viernes de 18:00 a 19:00.                            Martes y jueves de 18:00 a 19:00",
         "des_turno2":"Juvenil: martes y jueves de 18:00 a 19:00",
         "des_turno3":"Adultos: Lunes-miercoels y viernes de 20: 00 a 21:00",
+        "contacto":"Contacto: 4245456",
     },
     {
         "nom_sede":"Cit-Centro Integral de Tae kwon do",
@@ -148,6 +149,7 @@ sedesHorarios=[
         "des_turno2":"Infantil: Lunes miércoles y viernes  de 18:00 a 19:00",
         "des_turno3":"Juvenil: Lunes miércoles y viernes  de 19:00 a 20:00",
         "des_turno4":"Adulto: Lunes miércoles y viernes  de 20:00 a 21:00",
+        "contacto":"Contacto: 4245456",
     },
     {
         "nom_sede":"Club astilleros",
@@ -156,6 +158,7 @@ sedesHorarios=[
         "colapso_href":"#Club astilleros",
         "des_turno1":"Infantil: Lunes miércoles y viernes  de 18:00 a 19:00",
         "des_turno2":"Juvenil: Lunes miércoles y viernes de 19:00 a 20:00",
+        "contacto":"Contacto: 4245456",
     },
     {
         "nom_sede":"Comedor",
@@ -163,6 +166,7 @@ sedesHorarios=[
         "turno": "Infantil - 6+ | Juvenil ",
         "colapso_href":"#Comedor",
         "des_turno":"bui",
+        "contacto":"Contacto: 4245456",
     },
     {
         "nom_sede":"Corazones del retiro",
@@ -171,7 +175,7 @@ sedesHorarios=[
         "colapso_href":"#Corazones del retiro",
         "des_turno1":"Infantil y juvenil: Lunes miércoles y viernes de 18:00 a 19:00.",
         "des_turno2":"Adulto: Lunes miércoles y viernes  de 19:00 a 20:00.",
-        
+        "contacto":"Contacto: 4245456",
     }, 
     {
         "nom_sede":"Polideportivo- Los Hornos",
@@ -180,6 +184,7 @@ sedesHorarios=[
         "colapso_href":"#Polideportivo- Los Hornos",
         "des_turno1":"Infantil: Martes y jueves de 18:00 a 19:00",
         "des_turno2":"Juvenil: Martes y jueves de 19:00 a 20:00",
+        "contacto":"Contacto: 4245456",
     },     
 ]
 

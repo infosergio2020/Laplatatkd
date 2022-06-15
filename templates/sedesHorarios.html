@@ -9,25 +9,15 @@
 
 <!-- nombre de la sede -->
 <div class="fondo-color">
-      <!-- <div class="centrar-div">
-        <div id="kukkiwon" class="centrar-text bg-p-light py-3 text-center border anchuraCard">
-          <h1 class="txt-color-sl">Academia kukkiwon</h1>
-          <h2 class="tam_h2">Disciplina</h2>
-        </div>
-      </div> -->
+      
       <section class="parrallax" id="seccion_sedes">
-       
           
       </section>
-
-
-
       <div class="container-md ">
-          
       <!-- carrousel de profes -->
       {% for val in lista_sedes %}
         <div class="espacio_cen border-top border-dark">
-          <div class="espacio_3">
+          <div class="espacio_4">
             
                 <div class="my-4">
                   <span class="text-light"> {{val.nom_sede }}</span>
@@ -36,6 +26,9 @@
                 </div>
             
                 <p class="text-light my-4"> {{val.turno }} </p>
+
+                <p class="text-light my-4"> {{val.contacto }} </p>
+
                  <div>
                   <button tabindex="0" class="btn color-btn margin_card my-4"  data-bs-toggle="collapse" href={{ val.colapso_href }} role="button" aria-expanded="false" aria-controls="multiCollapseExample2"> ver detalle </button>         
                

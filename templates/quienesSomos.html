@@ -55,4 +55,30 @@
 
 
 </div>
+<!-- beneficios -->
+
+<!-- <div class="container bg-p-light p-4 margin-bene"> -->
+<div class="container p-4 margin-bene">
+  <h1 class="text-center titulo_bene_nosotros">Beneficios de practicar:</h1>
+  <div class="row mb-4">
+    {% for b in bene %}
+
+    <div class="col-md-6 mb-4">
+      <div class="card text-center bg-verdeLight text-black">
+        <div class="card-body">
+          <div class="mb-4">
+            <img src="{{b.icono}}" alt="icono" />
+          </div>
+          <h5 class="card-title">{{b.title}}</h5>
+          <div class="mb-4">
+            <p class="card-text">{{b.text}}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    {% if loop.index % 4 == 0 %}
+  </div>
+  <div class="row mb-4">{% endif %} {% endfor %}</div>
+</div>
 {% endblock %}

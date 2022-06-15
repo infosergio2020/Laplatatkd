@@ -238,7 +238,10 @@ h3{
 
 .section_phrases{
   margin: 0;
-  padding: 3.2rem;
+  padding-top: 1rem;
+  padding-left: 3.2rem;
+  padding-right: 3.2rem;
+  
 }
 
 
@@ -310,6 +313,7 @@ section{
   background-size: cover;
   height: 60vh;
 }
+
 
 #seccion1{
   background-image: url('../img/parralax/portada.webp');
@@ -387,4 +391,41 @@ section{
 }
 .margin-index{
 margin-top: 0rem;
+}
+
+.espacio_3_index{
+display: grid;
+grid-template-columns: repeat(3, 1fr); 
+justify-content: center;
+justify-items:center;
+gap: 2rem;
+}
+
+.img_index{
+  width: 350px; // tamaño definido por tania
+  align-items: center;
+}
+@media (max-width:750px) {
+  .espacio_3_index{
+    grid-template-columns: repeat(1, 1fr); 
+    gap: 2rem;
+
+  }
+  .img_index{
+    align-items: center;
+    width: 300px;
+  }
+}
+.index_padding_noticias{
+  padding: 2rem;
+}
+.noticias_texto_index{
+ padding-bottom: 2rem;
+}
+@media (max-width:950px) {
+  .espacio_2{
+    grid-template-columns: repeat(1, 1fr); 
+    gap: 2rem;
+
+  }
 }

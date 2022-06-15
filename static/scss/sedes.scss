@@ -4,9 +4,9 @@
     margin-left: 4rem;
     margin-right: 4rem;
 }
-.espacio_3{
+.espacio_4{
     display: grid;
-    grid-template-columns: repeat(3, 1fr); 
+    grid-template-columns: repeat(4, 1fr); 
     justify-items:flex-start;
     gap: 1rem;
     margin-left: 16rem;
@@ -18,7 +18,7 @@
 }
 
 @media (max-width: 1040px){
-    .espacio_3{
+    .espacio_4{
       justify-items:flex-start;
       gap: 3rem;
       margin-left: 0rem;
@@ -28,7 +28,7 @@
     }   
   }
 @media (max-width: 768px){
-    .espacio_3{
+    .espacio_4{
       grid-template-columns: repeat(1, 1fr); 
       justify-items:center;
       gap: 0rem;
