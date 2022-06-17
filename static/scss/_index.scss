@@ -275,10 +275,16 @@ h3{
   height: 100%;
 }
 
-.deg-dark-y{
-  background: rgb(0,0,0);
-  background: linear-gradient(0deg, rgba(0,0,0,0.5998774509803921) 20%, rgba(246,251,36,0) 35%, rgba(171,175,25,0) 71%, rgba(0,0,0,0.6362920168067228) 84%);
+
+
+@media (min-width: 768px){
+  .deg-dark-y{
+    background: rgb(0,0,0);
+    background: linear-gradient(0deg, rgba(0,0,0,0.5998774509803921) 20%, rgba(246,251,36,0) 35%, rgba(171,175,25,0) 71%, rgba(0,0,0,0.6362920168067228) 84%);
+  }
 }
+
+
 
 .margin-bene {
   margin-top: 1rem;
@@ -307,13 +313,21 @@ section{
   padding: 0;
   margin: 0;
 }
-
+// estilo celular
 .parrallax{
-  background: #fff fixed no-repeat 80% 20%;
-  background-size: cover;
-  height: 60vh;
+  background: #404040 no-repeat 80% 70%;
+  background-size: contain;
+  height: 40vh;
 }
 
+// estilo PC y tablet
+@media (min-width:768px) {
+  .parrallax{
+    background-size: cover !important;
+    background: #404040 fixed no-repeat 80% 20%;
+    height: 60vh;
+  } 
+}
 
 #seccion1{
   background-image: url('../img/parralax/portada.webp');
@@ -332,6 +346,7 @@ section{
 
 #seccion4{
   background-image: url('../img/contacto/contacto.webp');
+  background-position: center;
 }
 
 .margin-porque{
