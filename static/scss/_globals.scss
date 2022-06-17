@@ -1,0 +1,11 @@
+//movil
+p{
+    font-size: 0.8rem;
+}
+
+//PC y table
+@media (min-width:768px) {
+    p{
+        font-size: 16px;
+    }
+}
