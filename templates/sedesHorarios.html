@@ -30,7 +30,25 @@
                 <p class="text-light my-4"> {{val.contacto }} </p>
 
                  <div>
-                  <button tabindex="0" class="btn color-btn margin_card my-4"  data-bs-toggle="collapse" href={{ val.colapso_href }} role="button" aria-expanded="false" aria-controls="multiCollapseExample2"> ver detalle </button>         
+                  <div class="accordion-item  my-4 ">
+                    <h2 class="accordion-header " id="headingTwo">
+                      <button class="tamaño-boton color-btn accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target={{ val.colapso_href }} aria-expanded="false" aria-controls="collapseTwo">
+                        Ver detalle
+                      </button>
+                    </h2>
+                    <div id={{ val.nom_sede }} class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                      <div class="accordion-body">
+                        <p class="text-dark" style="font-size:11px ;"> {{ val.des_turno1 }} </p>
+                        <p class="text-dark" style="font-size:11px ;"> {{ val.des_turno2 }} </p>
+                        <p class="text-dark" style="font-size:11px ;"> {{ val.des_turno3 }} </p>
+                        <p class="text-dark" style="font-size:11px ;"> {{ val.des_turno4 }} </p>
+                     
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- //otro -->
+                  <!-- <button tabindex="0" class="btn color-btn margin_card my-4"  data-bs-toggle="collapse" href={{ val.colapso_href }} role="button" aria-expanded="false" aria-controls="multiCollapseExample2"> ver detalle </button>         
                
                        <div class="row" >
                         <div class="col">
@@ -43,7 +61,7 @@
                             </div>
                           </div>
                         </div>
-                      </div>
+                      </div> -->
                 </div>
           </div>
         </div>
