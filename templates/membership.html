@@ -1,19 +1,18 @@
 {% extends 'partials/_layout.html' %}
 {% block body %}
-<div id="membre" class="container-md margin-bene">
-    <div class="centrar-div">
-      <div class="centrar-text bg-p-light py-3 text-center border anchuraCard">
-        <h1 class="fs-1 txt-color-sl">Beneficios de pertener a nuestra asociación </h1> 
-      </div>
 
-    </div>
-    
-    <div class="container">
-       
-      <!-- los 4 cards -->
-        <div class="flex-socios-card card-deck mb-3 text-center">
+<div class="container">
+  <!-- los 4 cards -->
+  <div class="row text-center mb-5">
+          <div class="col-12 mb-3">
+            <div class="bg-p-light text-center p-4">
+              <h1 class="fs-1 txt-color-sl">Beneficios de pertener a nuestra asociación </h1> 
+            </div>
+          </div>
+          
+          <div class="col-lg-4 col-md-6 mb-3">
             <!-- primer card -->
-            <div class="card mx-5 mb-4">
+            <div class="card w-100 h-100">
                 <div class="card-header" style="background-color: var(--secondary);">
                   <h2 class="fs-4 fw-normal my-0 text-dark">Graduaciones oficiales </h2>
                 </div>
@@ -23,9 +22,11 @@
                     </div>
                     
                 </div>
+          </div>
             </div>
+          <div class="col-lg-4 col-md-6 mb-3">
             <!-- segundo card -->
-            <div class="card mx-5 mb-4">
+            <div class="card w-100 h-100">
                 <div class="card-header"  style="background-color: var(--secondary);">
                   <h2 class="fs-4 fw-normal my-0 text-dark">Participación en competencias</h2>
                 </div>
@@ -34,9 +35,11 @@
                         <p class="fs-6">Tendrás la posibilidad de disputar los eventos nacionales e internacionales oficiales representando a tu escuela, asociación, país, gracias a pertenecer a un ente reconocido.</p>
                     </div>
                 </div>
+          </div>
             </div>
+          <div class="col-lg-4 col-md-12 mb-3">
             <!-- tercer card -->
-            <div class="card mx-5 mb-4">
+            <div class="card w-100 h-100">
                 <div class="card-header" style="background-color: var(--secondary);">
                   <h2 class="fs-4 fw-normal my-0 text-dark">Capacitación</h2>
                 </div>
@@ -47,56 +50,54 @@
                     </div>
                 </div>
             </div>
-        </div>
-        <!-- carrpusel -->
-        <!-- carrouseln -->
-<div class="peliculas-recomendadas contenedor">
-  <div class="contenedor-titulo-controles">
-    <div class="row text-light">
-      <h2 class="text-center">Eventos</h2>
-    </div>
-    <div class="indicadores"></div>
+          </div>
   </div>
 
-  <div class="contenedor-principal">
-    <button role="button" id="flecha-izquierda" class="flecha-izquierda"><i class="fas fa-angle-left"></i></button>
+  <div class="peliculas-recomendadas contenedor">
+          <div class="contenedor-titulo-controles">
+            <div class="row text-light">
+              <h2 class="text-center">Eventos</h2>
+            </div>
+            <div class="indicadores"></div>
+          </div>
 
-    <div class="contenedor-carousel">
-      <div class="carousel">
-        <div class="pelicula">
-          <a href="#"><img src="https://mastkd.com/wp-content/uploads/2022/05/EDIT-2-Punta-Cana-2022-91-218x150.jpg" alt=""></a>
-        </div>
-        <div class="pelicula">
-          <a href="#"><img src="https://mastkd.com/wp-content/uploads/2022/05/REPUBLICA-DOMINICANA-BARCELO-BAVARO-218x150.jpg" alt=""></a>
-        </div>
-        <div class="pelicula">
-          <a href="#"><img src="https://mastkd.com/wp-content/uploads/2022/05/52042208839_6ca5478ec8_o-218x150.jpg" alt=""></a>
-        </div>
-        <div class="pelicula">
-          <a href="#"><img src="https://mastkd.com/wp-content/uploads/2022/05/EDIT-2-Punta-Cana-2022-91-218x150.jpg" alt=""></a>
-        </div>
-        <div class="pelicula">
-          <a href="#"><img src="https://mastkd.com/wp-content/uploads/2022/05/REPUBLICA-DOMINICANA-BARCELO-BAVARO-218x150.jpg" alt=""></a>
-        </div>
-        <div class="pelicula">
-          <a href="#"><img src="https://mastkd.com/wp-content/uploads/2022/05/52042208839_6ca5478ec8_o-218x150.jpg" alt=""></a>
-        </div>
-        <div class="pelicula">
-          <a href="#"><img src="https://mastkd.com/wp-content/uploads/2022/05/EDIT-2-Punta-Cana-2022-91-218x150.jpg" alt=""></a>
-        </div>
-        <div class="pelicula">
-          <a href="#"><img src="https://mastkd.com/wp-content/uploads/2022/05/REPUBLICA-DOMINICANA-BARCELO-BAVARO-218x150.jpg" alt=""></a>
-        </div>
-        <div class="pelicula">
-          <a href="#"><img src="https://mastkd.com/wp-content/uploads/2022/05/52042208839_6ca5478ec8_o-218x150.jpg" alt=""></a>
-        </div>
-      </div>
-    </div>
+          <div class="contenedor-principal">
+            <button role="button" id="flecha-izquierda" class="flecha-izquierda"><i class="fas fa-angle-left"></i></button>
 
-    <button role="button" id="flecha-derecha" class="flecha-derecha"><i class="fas fa-angle-right"></i></button>
-  </div>
-</div>
-    </div>
-    
+            <div class="contenedor-carousel">
+              <div class="carousel">
+                <div class="pelicula">
+                  <a href="#"><img src="https://mastkd.com/wp-content/uploads/2022/05/EDIT-2-Punta-Cana-2022-91-218x150.jpg" alt=""></a>
+                </div>
+                <div class="pelicula">
+                  <a href="#"><img src="https://mastkd.com/wp-content/uploads/2022/05/REPUBLICA-DOMINICANA-BARCELO-BAVARO-218x150.jpg" alt=""></a>
+                </div>
+                <div class="pelicula">
+                  <a href="#"><img src="https://mastkd.com/wp-content/uploads/2022/05/52042208839_6ca5478ec8_o-218x150.jpg" alt=""></a>
+                </div>
+                <div class="pelicula">
+                  <a href="#"><img src="https://mastkd.com/wp-content/uploads/2022/05/EDIT-2-Punta-Cana-2022-91-218x150.jpg" alt=""></a>
+                </div>
+                <div class="pelicula">
+                  <a href="#"><img src="https://mastkd.com/wp-content/uploads/2022/05/REPUBLICA-DOMINICANA-BARCELO-BAVARO-218x150.jpg" alt=""></a>
+                </div>
+                <div class="pelicula">
+                  <a href="#"><img src="https://mastkd.com/wp-content/uploads/2022/05/52042208839_6ca5478ec8_o-218x150.jpg" alt=""></a>
+                </div>
+                <div class="pelicula">
+                  <a href="#"><img src="https://mastkd.com/wp-content/uploads/2022/05/EDIT-2-Punta-Cana-2022-91-218x150.jpg" alt=""></a>
+                </div>
+                <div class="pelicula">
+                  <a href="#"><img src="https://mastkd.com/wp-content/uploads/2022/05/REPUBLICA-DOMINICANA-BARCELO-BAVARO-218x150.jpg" alt=""></a>
+                </div>
+                <div class="pelicula">
+                  <a href="#"><img src="https://mastkd.com/wp-content/uploads/2022/05/52042208839_6ca5478ec8_o-218x150.jpg" alt=""></a>
+                </div>
+              </div>
+            </div>
+
+            <button role="button" id="flecha-derecha" class="flecha-derecha"><i class="fas fa-angle-right"></i></button>
+          </div>
+  </div>    
 </div>
 {% endblock %}
